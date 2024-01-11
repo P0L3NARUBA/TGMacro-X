@@ -181,6 +181,7 @@ namespace TGMacro
             this.picLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLanguage.TabIndex = 19;
             this.picLanguage.TabStop = false;
+            this.picLanguage.Click += new System.EventHandler(this.picLanguage_Click);
             // 
             // cmbLanguage
             // 
@@ -193,6 +194,7 @@ namespace TGMacro
             this.cmbLanguage.Name = "cmbLanguage";
             this.cmbLanguage.Size = new System.Drawing.Size(58, 23);
             this.cmbLanguage.TabIndex = 14;
+            this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
             // 
             // btnStatus
             // 

@@ -47,9 +47,11 @@ namespace TGMacro
         {
             // add embedded languages to languages dictionary
             var tur = new Langs.TUR();
+            var ger = new Langs.GER();
             var eng = new Langs.ENG();
             Statics.AppSession.Languages.Add(new Langs.TUR());
             Statics.AppSession.Languages.Add(new Langs.ENG());
+            Statics.AppSession.Languages.Add(new Langs.GER());
 
             // import third party languages with distinct language names
             ImportLanguages();
@@ -453,6 +455,15 @@ namespace TGMacro
             }
         }
 
+        private void picLanguage_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
     }
-}
+    }
+    
+
