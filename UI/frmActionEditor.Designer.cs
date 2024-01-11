@@ -86,7 +86,7 @@ namespace TGMacro
             this.cbActionType.Location = new System.Drawing.Point(0, 19);
             this.cbActionType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbActionType.Name = "cbActionType";
-            this.cbActionType.Size = new System.Drawing.Size(198, 25);
+            this.cbActionType.Size = new System.Drawing.Size(198, 23);
             this.cbActionType.TabIndex = 4;
             // 
             // txtSleepAmount
@@ -99,7 +99,7 @@ namespace TGMacro
             0,
             0});
             this.txtSleepAmount.Name = "txtSleepAmount";
-            this.txtSleepAmount.Size = new System.Drawing.Size(93, 22);
+            this.txtSleepAmount.Size = new System.Drawing.Size(93, 21);
             this.txtSleepAmount.TabIndex = 23;
             this.txtSleepAmount.Value = new decimal(new int[] {
             500,
@@ -115,7 +115,7 @@ namespace TGMacro
             this.cbKeyStatus.Location = new System.Drawing.Point(0, 19);
             this.cbKeyStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbKeyStatus.Name = "cbKeyStatus";
-            this.cbKeyStatus.Size = new System.Drawing.Size(198, 25);
+            this.cbKeyStatus.Size = new System.Drawing.Size(198, 23);
             this.cbKeyStatus.TabIndex = 24;
             // 
             // pnlMousePos
@@ -161,7 +161,7 @@ namespace TGMacro
             0,
             -2147483648});
             this.mPosY.Name = "mPosY";
-            this.mPosY.Size = new System.Drawing.Size(75, 22);
+            this.mPosY.Size = new System.Drawing.Size(75, 21);
             this.mPosY.TabIndex = 31;
             // 
             // lblPosition
@@ -169,7 +169,7 @@ namespace TGMacro
             this.lblPosition.AutoSize = true;
             this.lblPosition.Location = new System.Drawing.Point(0, 0);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(60, 17);
+            this.lblPosition.Size = new System.Drawing.Size(57, 15);
             this.lblPosition.TabIndex = 27;
             this.lblPosition.Text = "Position :";
             // 
@@ -188,7 +188,7 @@ namespace TGMacro
             0,
             -2147483648});
             this.mPosX.Name = "mPosX";
-            this.mPosX.Size = new System.Drawing.Size(75, 22);
+            this.mPosX.Size = new System.Drawing.Size(75, 21);
             this.mPosX.TabIndex = 30;
             // 
             // label1
@@ -196,7 +196,7 @@ namespace TGMacro
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 17);
+            this.label1.Size = new System.Drawing.Size(21, 15);
             this.label1.TabIndex = 28;
             this.label1.Text = "X: ";
             // 
@@ -205,7 +205,7 @@ namespace TGMacro
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(100, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 17);
+            this.label3.Size = new System.Drawing.Size(17, 15);
             this.label3.TabIndex = 29;
             this.label3.Text = "Y:";
             // 
@@ -225,7 +225,7 @@ namespace TGMacro
             this.lblWaitAmount.AutoSize = true;
             this.lblWaitAmount.Location = new System.Drawing.Point(0, 0);
             this.lblWaitAmount.Name = "lblWaitAmount";
-            this.lblWaitAmount.Size = new System.Drawing.Size(120, 17);
+            this.lblWaitAmount.Size = new System.Drawing.Size(110, 15);
             this.lblWaitAmount.TabIndex = 27;
             this.lblWaitAmount.Text = "Wait amount : (ms)";
             // 
@@ -244,7 +244,7 @@ namespace TGMacro
             this.lblActionType.AutoSize = true;
             this.lblActionType.Location = new System.Drawing.Point(0, 0);
             this.lblActionType.Name = "lblActionType";
-            this.lblActionType.Size = new System.Drawing.Size(84, 17);
+            this.lblActionType.Size = new System.Drawing.Size(71, 15);
             this.lblActionType.TabIndex = 27;
             this.lblActionType.Text = "Action type :";
             // 
@@ -264,7 +264,7 @@ namespace TGMacro
             this.lblKeyStatus.AutoSize = true;
             this.lblKeyStatus.Location = new System.Drawing.Point(0, 0);
             this.lblKeyStatus.Name = "lblKeyStatus";
-            this.lblKeyStatus.Size = new System.Drawing.Size(73, 17);
+            this.lblKeyStatus.Size = new System.Drawing.Size(68, 15);
             this.lblKeyStatus.TabIndex = 27;
             this.lblKeyStatus.Text = "Key status :";
             // 
@@ -302,7 +302,7 @@ namespace TGMacro
             // 
             this.txtText.Location = new System.Drawing.Point(6, 20);
             this.txtText.Name = "txtText";
-            this.txtText.Size = new System.Drawing.Size(194, 22);
+            this.txtText.Size = new System.Drawing.Size(194, 21);
             this.txtText.TabIndex = 28;
             // 
             // lblText
@@ -310,7 +310,7 @@ namespace TGMacro
             this.lblText.AutoSize = true;
             this.lblText.Location = new System.Drawing.Point(0, 0);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(38, 17);
+            this.lblText.Size = new System.Drawing.Size(36, 15);
             this.lblText.TabIndex = 27;
             this.lblText.Text = "Text :";
             // 
@@ -330,7 +330,7 @@ namespace TGMacro
             this.txtKeySetter.Location = new System.Drawing.Point(6, 20);
             this.txtKeySetter.Name = "txtKeySetter";
             this.txtKeySetter.ReadOnly = true;
-            this.txtKeySetter.Size = new System.Drawing.Size(194, 22);
+            this.txtKeySetter.Size = new System.Drawing.Size(194, 21);
             this.txtKeySetter.TabIndex = 28;
             // 
             // lblKey
@@ -338,7 +338,7 @@ namespace TGMacro
             this.lblKey.AutoSize = true;
             this.lblKey.Location = new System.Drawing.Point(0, 0);
             this.lblKey.Name = "lblKey";
-            this.lblKey.Size = new System.Drawing.Size(35, 17);
+            this.lblKey.Size = new System.Drawing.Size(33, 15);
             this.lblKey.TabIndex = 27;
             this.lblKey.Text = "Key :";
             // 
@@ -358,7 +358,7 @@ namespace TGMacro
             this.lblPositioning.AutoSize = true;
             this.lblPositioning.Location = new System.Drawing.Point(0, 0);
             this.lblPositioning.Name = "lblPositioning";
-            this.lblPositioning.Size = new System.Drawing.Size(78, 17);
+            this.lblPositioning.Size = new System.Drawing.Size(74, 15);
             this.lblPositioning.TabIndex = 27;
             this.lblPositioning.Text = "Positioning :";
             // 
@@ -370,7 +370,7 @@ namespace TGMacro
             this.cbMouseMoveMethod.Location = new System.Drawing.Point(0, 19);
             this.cbMouseMoveMethod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbMouseMoveMethod.Name = "cbMouseMoveMethod";
-            this.cbMouseMoveMethod.Size = new System.Drawing.Size(198, 25);
+            this.cbMouseMoveMethod.Size = new System.Drawing.Size(198, 23);
             this.cbMouseMoveMethod.TabIndex = 24;
             // 
             // btnSave
@@ -411,7 +411,7 @@ namespace TGMacro
             this.pnlTop.Controls.Add(this.btnClose);
             this.pnlTop.Controls.Add(this.lblTitle);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTop.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.pnlTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlTop.MaximumSize = new System.Drawing.Size(0, 30);
@@ -440,13 +440,13 @@ namespace TGMacro
             this.lblTitle.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblTitle.Location = new System.Drawing.Point(10, 0);
             this.lblTitle.MaximumSize = new System.Drawing.Size(0, 30);
             this.lblTitle.MinimumSize = new System.Drawing.Size(0, 30);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.lblTitle.Size = new System.Drawing.Size(90, 30);
+            this.lblTitle.Size = new System.Drawing.Size(98, 30);
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "Action Editor";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -454,13 +454,13 @@ namespace TGMacro
             // frmActionEditor
             // 
             this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(228, 411);
             this.Controls.Add(this.pnlMain);
-            this.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

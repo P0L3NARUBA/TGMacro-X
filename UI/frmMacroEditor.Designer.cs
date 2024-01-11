@@ -59,7 +59,7 @@ namespace TGMacro
             this.btnClear = new System.Windows.Forms.Button();
             this.btnImportScript = new System.Windows.Forms.Button();
             this.btnClone = new System.Windows.Forms.Button();
-            this.dtActions = new DatagridDoubleBuffer();
+            this.dtActions = new TGMacro.UI.DatagridDoubleBuffer();
             this.btnDeleteAction = new System.Windows.Forms.Button();
             this.btnEditAction = new System.Windows.Forms.Button();
             this.btnActionMoveUp = new System.Windows.Forms.Button();
@@ -133,7 +133,7 @@ namespace TGMacro
             // lblGrabInfo2
             // 
             this.lblGrabInfo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblGrabInfo2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblGrabInfo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblGrabInfo2.ForeColor = System.Drawing.Color.Crimson;
             this.lblGrabInfo2.Location = new System.Drawing.Point(16, 127);
             this.lblGrabInfo2.Name = "lblGrabInfo2";
@@ -155,7 +155,7 @@ namespace TGMacro
             0,
             -2147483648});
             this.mPosY.Name = "mPosY";
-            this.mPosY.Size = new System.Drawing.Size(104, 22);
+            this.mPosY.Size = new System.Drawing.Size(104, 21);
             this.mPosY.TabIndex = 17;
             // 
             // mPosX
@@ -172,7 +172,7 @@ namespace TGMacro
             0,
             -2147483648});
             this.mPosX.Name = "mPosX";
-            this.mPosX.Size = new System.Drawing.Size(104, 22);
+            this.mPosX.Size = new System.Drawing.Size(104, 21);
             this.mPosX.TabIndex = 16;
             // 
             // pnlSelectedColor
@@ -189,7 +189,7 @@ namespace TGMacro
             this.lblColor.AutoSize = true;
             this.lblColor.Location = new System.Drawing.Point(3, 63);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(46, 17);
+            this.lblColor.Size = new System.Drawing.Size(42, 15);
             this.lblColor.TabIndex = 13;
             this.lblColor.Text = "Color :";
             // 
@@ -198,7 +198,7 @@ namespace TGMacro
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(168, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 17);
+            this.label3.Size = new System.Drawing.Size(17, 15);
             this.label3.TabIndex = 12;
             this.label3.Text = "Y:";
             // 
@@ -207,7 +207,7 @@ namespace TGMacro
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(28, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 17);
+            this.label1.Size = new System.Drawing.Size(21, 15);
             this.label1.TabIndex = 11;
             this.label1.Text = "X: ";
             // 
@@ -216,7 +216,7 @@ namespace TGMacro
             this.lblColorPos.AutoSize = true;
             this.lblColorPos.Location = new System.Drawing.Point(0, 5);
             this.lblColorPos.Name = "lblColorPos";
-            this.lblColorPos.Size = new System.Drawing.Size(96, 17);
+            this.lblColorPos.Size = new System.Drawing.Size(88, 15);
             this.lblColorPos.TabIndex = 8;
             this.lblColorPos.Text = "Color position :";
             // 
@@ -253,7 +253,7 @@ namespace TGMacro
             this.lblTrgKeys.AutoSize = true;
             this.lblTrgKeys.Location = new System.Drawing.Point(0, 0);
             this.lblTrgKeys.Name = "lblTrgKeys";
-            this.lblTrgKeys.Size = new System.Drawing.Size(40, 17);
+            this.lblTrgKeys.Size = new System.Drawing.Size(39, 15);
             this.lblTrgKeys.TabIndex = 7;
             this.lblTrgKeys.Text = "Keys :";
             // 
@@ -262,7 +262,7 @@ namespace TGMacro
             this.lblTrgMethod.AutoSize = true;
             this.lblTrgMethod.Location = new System.Drawing.Point(17, 82);
             this.lblTrgMethod.Name = "lblTrgMethod";
-            this.lblTrgMethod.Size = new System.Drawing.Size(49, 17);
+            this.lblTrgMethod.Size = new System.Drawing.Size(45, 15);
             this.lblTrgMethod.TabIndex = 5;
             this.lblTrgMethod.Text = "When :";
             // 
@@ -273,7 +273,7 @@ namespace TGMacro
             this.cbTriggerMethod.FormattingEnabled = true;
             this.cbTriggerMethod.Location = new System.Drawing.Point(17, 104);
             this.cbTriggerMethod.Name = "cbTriggerMethod";
-            this.cbTriggerMethod.Size = new System.Drawing.Size(321, 25);
+            this.cbTriggerMethod.Size = new System.Drawing.Size(321, 23);
             this.cbTriggerMethod.TabIndex = 4;
             // 
             // lblTrgType
@@ -281,7 +281,7 @@ namespace TGMacro
             this.lblTrgType.AutoSize = true;
             this.lblTrgType.Location = new System.Drawing.Point(17, 31);
             this.lblTrgType.Name = "lblTrgType";
-            this.lblTrgType.Size = new System.Drawing.Size(118, 17);
+            this.lblTrgType.Size = new System.Drawing.Size(109, 15);
             this.lblTrgType.TabIndex = 3;
             this.lblTrgType.Text = "Trigger actions by :";
             // 
@@ -292,7 +292,7 @@ namespace TGMacro
             this.cbTriggerType.FormattingEnabled = true;
             this.cbTriggerType.Location = new System.Drawing.Point(17, 53);
             this.cbTriggerType.Name = "cbTriggerType";
-            this.cbTriggerType.Size = new System.Drawing.Size(321, 25);
+            this.cbTriggerType.Size = new System.Drawing.Size(321, 23);
             this.cbTriggerType.TabIndex = 2;
             // 
             // grpActions
@@ -388,7 +388,7 @@ namespace TGMacro
             this.dtActions.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
@@ -398,7 +398,7 @@ namespace TGMacro
             this.dtActions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
@@ -408,14 +408,14 @@ namespace TGMacro
             this.dtActions.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtActions.EnableHeadersVisualStyles = false;
             this.dtActions.GridColor = System.Drawing.SystemColors.Window;
-            this.dtActions.Location = new System.Drawing.Point(3, 18);
+            this.dtActions.Location = new System.Drawing.Point(3, 17);
             this.dtActions.Name = "dtActions";
             this.dtActions.ReadOnly = true;
             this.dtActions.RowHeadersVisible = false;
             this.dtActions.RowHeadersWidth = 51;
             this.dtActions.RowTemplate.Height = 29;
             this.dtActions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtActions.Size = new System.Drawing.Size(422, 514);
+            this.dtActions.Size = new System.Drawing.Size(422, 515);
             this.dtActions.TabIndex = 8;
             this.dtActions.TabStop = false;
             // 
@@ -483,7 +483,7 @@ namespace TGMacro
             // 
             this.txtMacroName.Location = new System.Drawing.Point(17, 31);
             this.txtMacroName.Name = "txtMacroName";
-            this.txtMacroName.Size = new System.Drawing.Size(169, 22);
+            this.txtMacroName.Size = new System.Drawing.Size(169, 21);
             this.txtMacroName.TabIndex = 0;
             this.txtMacroName.Text = "Macro 01";
             // 
@@ -533,7 +533,7 @@ namespace TGMacro
             this.pnlTop.Controls.Add(this.btnClose);
             this.pnlTop.Controls.Add(this.lblTitle);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTop.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.pnlTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlTop.MaximumSize = new System.Drawing.Size(0, 30);
@@ -574,13 +574,13 @@ namespace TGMacro
             this.lblTitle.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblTitle.Location = new System.Drawing.Point(10, 0);
             this.lblTitle.MaximumSize = new System.Drawing.Size(0, 30);
             this.lblTitle.MinimumSize = new System.Drawing.Size(0, 30);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.lblTitle.Size = new System.Drawing.Size(91, 30);
+            this.lblTitle.Size = new System.Drawing.Size(99, 30);
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "Macro Editor";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -627,7 +627,7 @@ namespace TGMacro
             this.cbDelays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbDelays.Location = new System.Drawing.Point(20, 197);
             this.cbDelays.Name = "cbDelays";
-            this.cbDelays.Size = new System.Drawing.Size(63, 21);
+            this.cbDelays.Size = new System.Drawing.Size(60, 19);
             this.cbDelays.TabIndex = 12;
             this.cbDelays.Text = "Delays";
             this.cbDelays.UseVisualStyleBackColor = true;
@@ -640,7 +640,7 @@ namespace TGMacro
             this.cbKeyboardKeys.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbKeyboardKeys.Location = new System.Drawing.Point(20, 167);
             this.cbKeyboardKeys.Name = "cbKeyboardKeys";
-            this.cbKeyboardKeys.Size = new System.Drawing.Size(110, 21);
+            this.cbKeyboardKeys.Size = new System.Drawing.Size(104, 19);
             this.cbKeyboardKeys.TabIndex = 11;
             this.cbKeyboardKeys.Text = "Keyboard Keys";
             this.cbKeyboardKeys.UseVisualStyleBackColor = true;
@@ -653,7 +653,7 @@ namespace TGMacro
             this.cbMouseButtons.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMouseButtons.Location = new System.Drawing.Point(21, 138);
             this.cbMouseButtons.Name = "cbMouseButtons";
-            this.cbMouseButtons.Size = new System.Drawing.Size(110, 21);
+            this.cbMouseButtons.Size = new System.Drawing.Size(105, 19);
             this.cbMouseButtons.TabIndex = 10;
             this.cbMouseButtons.Text = "Mouse Buttons";
             this.cbMouseButtons.UseVisualStyleBackColor = true;
@@ -666,7 +666,7 @@ namespace TGMacro
             this.cbMouseMovements.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMouseMovements.Location = new System.Drawing.Point(20, 111);
             this.cbMouseMovements.Name = "cbMouseMovements";
-            this.cbMouseMovements.Size = new System.Drawing.Size(137, 21);
+            this.cbMouseMovements.Size = new System.Drawing.Size(128, 19);
             this.cbMouseMovements.TabIndex = 9;
             this.cbMouseMovements.Text = "Mouse Movements";
             this.cbMouseMovements.UseVisualStyleBackColor = true;
@@ -676,7 +676,7 @@ namespace TGMacro
             this.lblRecordThis.AutoSize = true;
             this.lblRecordThis.Location = new System.Drawing.Point(16, 88);
             this.lblRecordThis.Name = "lblRecordThis";
-            this.lblRecordThis.Size = new System.Drawing.Size(57, 17);
+            this.lblRecordThis.Size = new System.Drawing.Size(53, 15);
             this.lblRecordThis.TabIndex = 8;
             this.lblRecordThis.Text = "Record :";
             // 
@@ -685,7 +685,7 @@ namespace TGMacro
             this.lblMouseCapPos.AutoSize = true;
             this.lblMouseCapPos.Location = new System.Drawing.Point(14, 25);
             this.lblMouseCapPos.Name = "lblMouseCapPos";
-            this.lblMouseCapPos.Size = new System.Drawing.Size(128, 17);
+            this.lblMouseCapPos.Size = new System.Drawing.Size(123, 15);
             this.lblMouseCapPos.TabIndex = 7;
             this.lblMouseCapPos.Text = "Mouse\'s positioning :";
             // 
@@ -696,7 +696,7 @@ namespace TGMacro
             this.cbMousePositioning.FormattingEnabled = true;
             this.cbMousePositioning.Location = new System.Drawing.Point(14, 47);
             this.cbMousePositioning.Name = "cbMousePositioning";
-            this.cbMousePositioning.Size = new System.Drawing.Size(321, 25);
+            this.cbMousePositioning.Size = new System.Drawing.Size(321, 23);
             this.cbMousePositioning.TabIndex = 6;
             // 
             // btnTest
@@ -734,11 +734,11 @@ namespace TGMacro
             // 
             // frmMacroEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(862, 674);
             this.Controls.Add(this.pnlMain);
-            this.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
