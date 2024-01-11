@@ -3,6 +3,11 @@
 A Macro that beats every macro program in the universe!
 fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://github.com/trksyln)
 
+# Features That Added New
+- German Language Support
+- New Icon for Program
+
+
 # How To Build
 * This tutorial maybe can be bit of complex, so make sure you reading the tutorial more focused.
 * In the end of the day, you will able to compile the whole project and make it more good.
