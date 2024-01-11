@@ -3,7 +3,7 @@
 A Macro that beats every macro program in the universe!
 fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://github.com/trksyln)
 
-# Features That Added New
+### Features That Added New
 - German Language Support
 - New Icon for Program
 
