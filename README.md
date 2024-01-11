@@ -9,7 +9,7 @@ fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://g
 
 ## Prerequisites
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
-- .NET Framework 4 Targeting Pack
+- .NET Framework 4 Targeting Pack from VS2019
 - .NET desktop development
 
 ## Running in Visual Studio 2022
