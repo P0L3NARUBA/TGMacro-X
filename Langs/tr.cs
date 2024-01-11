@@ -71,9 +71,9 @@
 
         public override string btnImportActionsFromScript => "İçe aktar makro script";
 
-        public override string text_triggering => "Tetkikleme";
+        public override string text_triggering => "Tetikleme";
 
-        public override string text_trigger_action_by => "Şununla tetkikle :";
+        public override string text_trigger_action_by => "Şununla tetikli :";
 
         public override string txt_when => "Olduğunda :";
 
