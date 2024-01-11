@@ -1,7 +1,6 @@
 # TGMX - TGMacro X
 
-A Macro that beats every macro program in the universe!
-fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://github.com/trksyln)
+This repository includes TGMacro X source code and release, also fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://github.com/trksyln)
 
 ### Features That Added New
 - German Language Support
