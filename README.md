@@ -5,6 +5,7 @@ fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://g
 
 ### Features That Added New
 - German Language Support
+- Some improvements for Turkish Language
 - New Icon for Program
 - Some UI Changes
 - Upgraded to Visual Studio 2022!
