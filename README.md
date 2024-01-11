@@ -21,6 +21,7 @@ And also have prebuilded CSInputs library inside of the repository, If you lazy 
 # How To Build
 * This tutorial maybe can be bit of complex, so make sure you reading the tutorial more focused.
 * In the end of the day, you will able to compile the whole project and make it more good.
+* In the normal TGMacro repository, there are not a full tutorial that covers everything but in this repository you can learn how to compile and how to set your workspace.
 
 ## Requirements
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
@@ -51,4 +52,5 @@ And also have prebuilded CSInputs library inside of the repository, If you lazy 
 - Copy and paste that new file that you compiled to main folder that contains **"TGMacroX.sln"**
 > [!NOTE]
 >  There is already prebuilded version of CSInputs already in the source code but if you interested you can build yourself as instructed on the top.
+
 
