@@ -41,6 +41,7 @@ And also have prebuilded CSInputs library inside of the repository, If you lazy 
 - Just open TGMacroX.sln
 - Switch Debug to Release before compiling.
 - At the top Press Build > Build Solution
+- Go to bin > Release and you can find the compiled program.
   
 ### Compiling CSInputs
 - Just open CSInputs.sln **(In the "CSInputs" Folder)**
