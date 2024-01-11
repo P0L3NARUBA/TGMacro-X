@@ -19,7 +19,7 @@ And also have prebuilded CSInputs library inside of the repository, If you lazy 
 
 # For Developers
 
-If you dont wanna mesh with these things you can just [download the precompiled and ready to use program from here](https://github.com/WH0LEWHALE/TGMacro-X/releases)
+If you dont wanna mess with these type of things then you can just [download the precompiled and ready to use zip file that includes executable from here](https://github.com/WH0LEWHALE/TGMacro-X/releases)
 
 ## How To Build
 * This tutorial maybe can be bit of complex, so make sure you reading the tutorial more focused.
