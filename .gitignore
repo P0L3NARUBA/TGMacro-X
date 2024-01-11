@@ -4,7 +4,6 @@
 
 /obj
 /.vs
-/trksyln.pfx
 /bin/Debug
 /bin/Release
 *.user
