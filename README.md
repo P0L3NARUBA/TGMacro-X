@@ -46,7 +46,8 @@ And also have prebuilded CSInputs library inside of the repository, If you lazy 
 - Just open CSInputs.sln **(In the "CSInputs" Folder)**
 - Switch Debug to Release before compiling.
 - At the top Press Build > Build Solution
-- And replace the file in the source code that named "CSInputs.dll"
+- Go into CSInputs > bin > Release and find the CSInputs.dll
+- Copy and paste that new file that you compiled to main folder that contains **"TGMacroX.sln"**
 > [!NOTE]
 >  There is already prebuilded version of CSInputs already in the source code but if you interested you can build yourself as instructed on the top.
 
