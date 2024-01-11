@@ -25,12 +25,12 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <SupportUrl>https://sourceforge.net/projects/tmacro/support</SupportUrl>
-    <ErrorReportUrl>https://sourceforge.net/projects/tmacro/support</ErrorReportUrl>
+    <SupportUrl></SupportUrl>
+    <ErrorReportUrl></ErrorReportUrl>
     <TargetCulture>en</TargetCulture>
-    <ProductName>TGMacro</ProductName>
-    <PublisherName>trksyln</PublisherName>
-    <SuiteName>TGMacro</SuiteName>
+    <ProductName>TGMacroX</ProductName>
+    <PublisherName>wh0lewhale</PublisherName>
+    <SuiteName>TGMacroX</SuiteName>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>2</ApplicationRevision>
@@ -113,9 +113,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>2724ACF9B3D5C03048D7B34004FC5CA53F72D31D</ManifestCertificateThumbprint>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ManifestKeyFile>trksyln.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
