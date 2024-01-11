@@ -4,11 +4,19 @@ A Macro that beats every macro program in the universe!
 fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://github.com/trksyln)
 
 # How To Build
+* This tutorial maybe can be bit of complex, so make sure you reading the tutorial more focused.
+* In the end of the day, you will able to compile the whole project and make it more good.
 
 ## Prerequisites
+Visual Studio 2019:
 - [Visual Studio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_campaign=download+from+relnotes&utm_content=vs2019ga+button)
-- .NET desktop development
-- .NET Framework 4 Targeting Pack
+- .NET Framework 4 Targeting Pack (which can be found here **Individual components > .NET Framework 4 Targeting Pack**)
+- If you wanna use VS 2019 instead of VS 2022. Install .NET desktop development (which can be found here **Workloads > .NET Framework 4 Targeting Pack**) 
+  
+Visual Studio 2022:
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
+- .NET desktop development (which can be found here **Workloads > .NET Framework 4 Targeting Pack**)
+
 
 ## Running in Visual Studio 2022
 
