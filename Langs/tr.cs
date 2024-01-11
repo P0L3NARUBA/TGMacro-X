@@ -3,7 +3,7 @@
     public class TUR : Bases.LanguageBase
     {
         public override string language_name => "TUR";
-        public override string info_color_box => "Rengi soldaki renkli kutuya tıklayarakda değiştirebilirsiniz.";
+        public override string info_color_box => "Rengi soldaki renkli kutuya tıklayarak da değiştirebilirsiniz.";
         public override string info_getting_color_and_position => "•Alt + X İmleç pozisyonu\r\n•Alt + C İmlece göre ekran rengi";
         public override string btnFile => "Dosya";
 
@@ -140,7 +140,7 @@
 
         public override string btnClearActions => "Tüm aksiyonları temizle";
 
-        public override string text_capture_mouse_pos => "İşaretçinin şu posizyonunu al :";
+        public override string text_capture_mouse_pos => "İşaretçinin şu pozisyonunu al :";
         public override string text_mouse_move_method_info => "Mutlak Değer işaretçinin yeni pozisyonunu belirler.\r\nGöreceli Değer işaretçinin pozisyonundan ekleme veya çıkartma yapar.";
 
         public override string text_grab_cursor_position => "(İşaretçi poz. için Alt + X)";
@@ -174,9 +174,9 @@
         public override string info_mouse_key_missing => "Bazı fare tuş aksiyonlarının basılma veya bırakılma aksiyonları eksik. Aksiyon listesini kontrol edin.";
         public override string info_actions_has_trigger_key => "Aksiyonlar tetkikleme için ayarlanmış tuşları gönderemez.";
 
-        public override string btn_macro_delete => "{macroname} silenecek?";
+        public override string btn_macro_delete => "{macroname} silenecek, kabul ediyor musunuz?";
 
-        public override string macro_delete_title => "Makro sil";
+        public override string macro_delete_title => "Makroyu sil";
 
         public override string edit_macro => "Makroyu düzenle";
 
