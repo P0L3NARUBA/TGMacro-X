@@ -14,7 +14,7 @@ fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://g
 * This tutorial maybe can be bit of complex, so make sure you reading the tutorial more focused.
 * In the end of the day, you will able to compile the whole project and make it more good.
 
-## Prerequisites
+## Requirements
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 - .NET Framework 4 Targeting Pack from VS2019
 - .NET desktop development
