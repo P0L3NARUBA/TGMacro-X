@@ -8,6 +8,8 @@ This repository includes TGMacro X source code and release, also fork of [TGMacr
 - New Icon for Program
 - Some UI Changes
 - Upgraded to Visual Studio 2022!
+- Added .sln files.
+- It compiles very easier than original TGMacro.
 
 
 # How To Build
