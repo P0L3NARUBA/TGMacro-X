@@ -7,6 +7,7 @@ fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://g
 - German Language Support
 - New Icon for Program
 - Some UI Changes
+- Upgraded to Visual Studio 2022!
 
 
 # How To Build
