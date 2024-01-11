@@ -66,6 +66,8 @@ namespace TGMacro
             // 
             // pnlGroup
             // 
+            this.pnlGroup.Controls.Add(this.picLanguage);
+            this.pnlGroup.Controls.Add(this.cmbLanguage);
             this.pnlGroup.Controls.Add(this.btnAdd);
             this.pnlGroup.Controls.Add(this.btnEnable);
             this.pnlGroup.Controls.Add(this.lblNoMacroMessage);
@@ -84,9 +86,9 @@ namespace TGMacro
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Image = global::TGMacroX.Properties.Resources.add_32;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.Location = new System.Drawing.Point(261, 487);
+            this.btnAdd.Location = new System.Drawing.Point(316, 487);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(193, 41);
+            this.btnAdd.Size = new System.Drawing.Size(138, 41);
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "Add New Macro";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -103,7 +105,7 @@ namespace TGMacro
             this.btnEnable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEnable.Location = new System.Drawing.Point(10, 487);
             this.btnEnable.Name = "btnEnable";
-            this.btnEnable.Size = new System.Drawing.Size(193, 41);
+            this.btnEnable.Size = new System.Drawing.Size(158, 41);
             this.btnEnable.TabIndex = 15;
             this.btnEnable.Text = "Enable {HOME}";
             this.btnEnable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,8 +153,6 @@ namespace TGMacro
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnlMain.Controls.Add(this.picLanguage);
-            this.pnlMain.Controls.Add(this.cmbLanguage);
             this.pnlMain.Controls.Add(this.btnStatus);
             this.pnlMain.Controls.Add(this.btnTopMost);
             this.pnlMain.Controls.Add(this.btnMin);
@@ -175,7 +175,7 @@ namespace TGMacro
             // 
             this.picLanguage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picLanguage.Image = global::TGMacroX.Properties.Resources.language_24;
-            this.picLanguage.Location = new System.Drawing.Point(272, 3);
+            this.picLanguage.Location = new System.Drawing.Point(196, 497);
             this.picLanguage.Name = "picLanguage";
             this.picLanguage.Size = new System.Drawing.Size(24, 24);
             this.picLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -190,7 +190,7 @@ namespace TGMacro
             this.cmbLanguage.Items.AddRange(new object[] {
             "TR",
             "EN"});
-            this.cmbLanguage.Location = new System.Drawing.Point(302, 2);
+            this.cmbLanguage.Location = new System.Drawing.Point(226, 497);
             this.cmbLanguage.Name = "cmbLanguage";
             this.cmbLanguage.Size = new System.Drawing.Size(58, 23);
             this.cmbLanguage.TabIndex = 14;
@@ -202,9 +202,9 @@ namespace TGMacro
             this.btnStatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnStatus.FlatAppearance.BorderSize = 0;
             this.btnStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatus.Location = new System.Drawing.Point(366, 0);
+            this.btnStatus.Location = new System.Drawing.Point(264, 3);
             this.btnStatus.Name = "btnStatus";
-            this.btnStatus.Size = new System.Drawing.Size(20, 30);
+            this.btnStatus.Size = new System.Drawing.Size(20, 24);
             this.btnStatus.TabIndex = 11;
             this.btnStatus.UseVisualStyleBackColor = true;
             // 
@@ -214,11 +214,12 @@ namespace TGMacro
             this.btnTopMost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTopMost.FlatAppearance.BorderSize = 0;
             this.btnTopMost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTopMost.Location = new System.Drawing.Point(386, 0);
+            this.btnTopMost.Location = new System.Drawing.Point(384, 0);
             this.btnTopMost.Name = "btnTopMost";
             this.btnTopMost.Size = new System.Drawing.Size(20, 30);
             this.btnTopMost.TabIndex = 10;
             this.btnTopMost.UseVisualStyleBackColor = true;
+            this.btnTopMost.Click += new System.EventHandler(this.btnTopMost_Click);
             // 
             // btnMin
             // 

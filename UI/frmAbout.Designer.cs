@@ -38,6 +38,7 @@ namespace TGMacro
             this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,6 +70,7 @@ namespace TGMacro
             // pnlMain
             // 
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMain.Controls.Add(this.label3);
             this.pnlMain.Controls.Add(this.button1);
             this.pnlMain.Controls.Add(this.pnlTop);
             this.pnlMain.Controls.Add(this.pictureBox1);
@@ -140,12 +142,23 @@ namespace TGMacro
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TGMacroX.Properties.Resources.png;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 62);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(103, 113);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.label3.Location = new System.Drawing.Point(163, 141);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 17);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Tarık Saylan @trksyln";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // frmAbout
             // 
@@ -178,5 +191,6 @@ namespace TGMacro
         public System.Windows.Forms.Button btnClose;
         public System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
     }
 }

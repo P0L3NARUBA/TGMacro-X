@@ -39,5 +39,10 @@ namespace TGMacro
         {
 
         }
+
+        private void label3_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

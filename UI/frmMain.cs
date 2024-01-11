@@ -178,7 +178,7 @@ namespace TGMacro
             {
                 try
                 {
-                    System.Diagnostics.Process.Start("https://sourceforge.net/projects/tmacro/");
+                    System.Diagnostics.Process.Start("https://github.com/WH0LEWHALE/TGMacro-X/releases/tag/release");
                 }
                 catch { }
             };
@@ -462,6 +462,11 @@ namespace TGMacro
 
         private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
+        }
+
+        private void btnTopMost_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }
