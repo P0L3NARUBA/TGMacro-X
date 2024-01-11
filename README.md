@@ -23,12 +23,12 @@ fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://g
 
 ### Compiling TGMacroX 
 
-- Just open TGMacroX.csproj
+- Just open TGMacroX.sln
 - Switch Debug to Release before compiling.
 - At the top Press Build > Build Solution
   
 ### Compiling CSInputs
-- Just open CSInputs.csproj **(In the "CSInputs" Folder)**
+- Just open CSInputs.sln **(In the "CSInputs" Folder)**
 - Switch Debug to Release before compiling.
 - At the top Press Build > Build Solution
 - And replace the file in the source code that named "CSInputs.dll"
