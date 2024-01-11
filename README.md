@@ -6,6 +6,7 @@ fork of [TGMacro](https://github.com/trksyln/TGMacro) made by [Tarık](https://g
 ### Features That Added New
 - German Language Support
 - New Icon for Program
+- Some UI Changes
 
 
 # How To Build
