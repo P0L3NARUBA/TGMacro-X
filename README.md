@@ -7,9 +7,15 @@ This repository includes TGMacro X source code and release, also fork of [TGMacr
 - Some improvements for Turkish Language
 - New Icon for Program
 - Some UI Changes
+
+#### Technical Features
+
 - Upgraded to Visual Studio 2022!
 - Added .sln files.
 - It compiles very easier than original TGMacro.
+- It contains CSInputs library inside of the repository so you don't need to download from other places.
+
+And also have prebuilded CSInputs library inside of the repository, If you lazy to build CSInputs you can actually use prebuilded one. [or even you can build yourself from here](#compiling-csinputs)
 
 
 # How To Build
