@@ -32,6 +32,8 @@ namespace TGMacro
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pnlGroup = new System.Windows.Forms.Panel();
+            this.picLanguage = new System.Windows.Forms.PictureBox();
+            this.cmbLanguage = new System.Windows.Forms.ComboBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEnable = new System.Windows.Forms.Button();
             this.lblNoMacroMessage = new System.Windows.Forms.Label();
@@ -39,8 +41,6 @@ namespace TGMacro
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.picLanguage = new System.Windows.Forms.PictureBox();
-            this.cmbLanguage = new System.Windows.Forms.ComboBox();
             this.btnStatus = new System.Windows.Forms.Button();
             this.btnTopMost = new System.Windows.Forms.Button();
             this.btnMin = new System.Windows.Forms.Button();
@@ -58,16 +58,14 @@ namespace TGMacro
             this.btnImportScript = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnlGroup.SuspendLayout();
-            this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLanguage)).BeginInit();
+            this.pnlMain.SuspendLayout();
             this.ctHelpMenu.SuspendLayout();
             this.ctFileMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlGroup
             // 
-            this.pnlGroup.Controls.Add(this.picLanguage);
-            this.pnlGroup.Controls.Add(this.cmbLanguage);
             this.pnlGroup.Controls.Add(this.btnAdd);
             this.pnlGroup.Controls.Add(this.btnEnable);
             this.pnlGroup.Controls.Add(this.lblNoMacroMessage);
@@ -78,6 +76,31 @@ namespace TGMacro
             this.pnlGroup.Size = new System.Drawing.Size(464, 539);
             this.pnlGroup.TabIndex = 0;
             // 
+            // picLanguage
+            // 
+            this.picLanguage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picLanguage.Image = global::TGMacroX.Properties.Resources.language_24;
+            this.picLanguage.Location = new System.Drawing.Point(276, 4);
+            this.picLanguage.Name = "picLanguage";
+            this.picLanguage.Size = new System.Drawing.Size(24, 24);
+            this.picLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLanguage.TabIndex = 19;
+            this.picLanguage.TabStop = false;
+            this.picLanguage.Click += new System.EventHandler(this.picLanguage_Click);
+            // 
+            // cmbLanguage
+            // 
+            this.cmbLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLanguage.FormattingEnabled = true;
+            this.cmbLanguage.Items.AddRange(new object[] {
+            "TR",
+            "EN"});
+            this.cmbLanguage.Location = new System.Drawing.Point(306, 4);
+            this.cmbLanguage.Name = "cmbLanguage";
+            this.cmbLanguage.Size = new System.Drawing.Size(72, 23);
+            this.cmbLanguage.TabIndex = 14;
+            this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
+            // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -86,9 +109,9 @@ namespace TGMacro
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Image = global::TGMacroX.Properties.Resources.add_32;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.Location = new System.Drawing.Point(316, 487);
+            this.btnAdd.Location = new System.Drawing.Point(255, 487);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(138, 41);
+            this.btnAdd.Size = new System.Drawing.Size(199, 41);
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "Add New Macro";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -105,7 +128,7 @@ namespace TGMacro
             this.btnEnable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEnable.Location = new System.Drawing.Point(10, 487);
             this.btnEnable.Name = "btnEnable";
-            this.btnEnable.Size = new System.Drawing.Size(158, 41);
+            this.btnEnable.Size = new System.Drawing.Size(239, 41);
             this.btnEnable.TabIndex = 15;
             this.btnEnable.Text = "Enable {HOME}";
             this.btnEnable.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -153,7 +176,9 @@ namespace TGMacro
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlMain.Controls.Add(this.picLanguage);
             this.pnlMain.Controls.Add(this.btnStatus);
+            this.pnlMain.Controls.Add(this.cmbLanguage);
             this.pnlMain.Controls.Add(this.btnTopMost);
             this.pnlMain.Controls.Add(this.btnMin);
             this.pnlMain.Controls.Add(this.btnClose);
@@ -171,38 +196,13 @@ namespace TGMacro
             this.pnlMain.Size = new System.Drawing.Size(464, 30);
             this.pnlMain.TabIndex = 6;
             // 
-            // picLanguage
-            // 
-            this.picLanguage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picLanguage.Image = global::TGMacroX.Properties.Resources.language_24;
-            this.picLanguage.Location = new System.Drawing.Point(196, 497);
-            this.picLanguage.Name = "picLanguage";
-            this.picLanguage.Size = new System.Drawing.Size(24, 24);
-            this.picLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLanguage.TabIndex = 19;
-            this.picLanguage.TabStop = false;
-            this.picLanguage.Click += new System.EventHandler(this.picLanguage_Click);
-            // 
-            // cmbLanguage
-            // 
-            this.cmbLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLanguage.FormattingEnabled = true;
-            this.cmbLanguage.Items.AddRange(new object[] {
-            "TR",
-            "EN"});
-            this.cmbLanguage.Location = new System.Drawing.Point(226, 497);
-            this.cmbLanguage.Name = "cmbLanguage";
-            this.cmbLanguage.Size = new System.Drawing.Size(58, 23);
-            this.cmbLanguage.TabIndex = 14;
-            this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
-            // 
             // btnStatus
             // 
             this.btnStatus.BackgroundImage = global::TGMacroX.Properties.Resources.paused_16;
             this.btnStatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnStatus.FlatAppearance.BorderSize = 0;
             this.btnStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatus.Location = new System.Drawing.Point(264, 3);
+            this.btnStatus.Location = new System.Drawing.Point(250, 4);
             this.btnStatus.Name = "btnStatus";
             this.btnStatus.Size = new System.Drawing.Size(20, 24);
             this.btnStatus.TabIndex = 11;
@@ -372,9 +372,9 @@ namespace TGMacro
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TGMX";
             this.pnlGroup.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLanguage)).EndInit();
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLanguage)).EndInit();
             this.ctHelpMenu.ResumeLayout(false);
             this.ctFileMenu.ResumeLayout(false);
             this.ResumeLayout(false);

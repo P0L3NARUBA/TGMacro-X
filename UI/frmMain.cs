@@ -46,11 +46,11 @@ namespace TGMacro
         private void FrmMain_Shown(object sender, EventArgs e)
         {
             // add embedded languages to languages dictionary
+            var eng = new Langs.ENG();
             var tur = new Langs.TUR();
             var ger = new Langs.GER();
-            var eng = new Langs.ENG();
-            Statics.AppSession.Languages.Add(new Langs.TUR());
             Statics.AppSession.Languages.Add(new Langs.ENG());
+            Statics.AppSession.Languages.Add(new Langs.TUR());
             Statics.AppSession.Languages.Add(new Langs.GER());
 
             // import third party languages with distinct language names
