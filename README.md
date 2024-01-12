@@ -1,4 +1,4 @@
-# TGMX - TGMacro X (DARK EDITION)
+# TGMX - TGMacro X
 
 This repository includes TGMacro X source code and release, also fork of [TGMacro](https://github.com/trksyln/TGMacro)
 
