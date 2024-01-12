@@ -488,7 +488,7 @@ namespace TGMacro
             {
                 if (dtActions.Rows.Count < 1)
                 {
-                    MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_action_to_key, "Err");
+                    MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_action_to_key, "Error");
                     return;
                 }
                 if (!CheckActions())
@@ -902,12 +902,12 @@ namespace TGMacro
         {
             if (txtMacroName.Text.Length < 2)
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.info_enter_macro_name, "Err");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.info_enter_macro_name, "Error");
                 return;
             }
             if (dtActions.Rows.Count < 1)
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_action_to_save, "Err");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_action_to_save, "Error");
                 return;
             }
 
@@ -928,7 +928,7 @@ namespace TGMacro
                 case 0:
                     if (SecondaryKey == 0 && SecondaryMouseKey == 0)
                     {
-                        MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_key_selected, "Err");
+                        MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_key_selected, "Error");
                         return;
                     }
                     if (SecondaryMouseKey != 0)

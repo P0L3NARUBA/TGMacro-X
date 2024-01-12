@@ -120,6 +120,7 @@ namespace TGMacro
             // 
             // pnlMousePos
             // 
+            this.pnlMousePos.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pnlMousePos.Controls.Add(this.lblGrabCurInfo);
             this.pnlMousePos.Controls.Add(this.mPosY);
             this.pnlMousePos.Controls.Add(this.lblPosition);
@@ -138,7 +139,7 @@ namespace TGMacro
             // 
             this.lblGrabCurInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblGrabCurInfo.Font = new System.Drawing.Font("Segoe UI", 7.5F);
-            this.lblGrabCurInfo.ForeColor = System.Drawing.Color.Crimson;
+            this.lblGrabCurInfo.ForeColor = System.Drawing.Color.MediumBlue;
             this.lblGrabCurInfo.Location = new System.Drawing.Point(0, 49);
             this.lblGrabCurInfo.Name = "lblGrabCurInfo";
             this.lblGrabCurInfo.Size = new System.Drawing.Size(210, 15);
@@ -167,6 +168,7 @@ namespace TGMacro
             // lblPosition
             // 
             this.lblPosition.AutoSize = true;
+            this.lblPosition.ForeColor = System.Drawing.SystemColors.Control;
             this.lblPosition.Location = new System.Drawing.Point(0, 0);
             this.lblPosition.Name = "lblPosition";
             this.lblPosition.Size = new System.Drawing.Size(57, 15);
@@ -194,6 +196,7 @@ namespace TGMacro
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(3, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 15);
@@ -203,6 +206,7 @@ namespace TGMacro
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
             this.label3.Location = new System.Drawing.Point(100, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(17, 15);
@@ -213,6 +217,7 @@ namespace TGMacro
             // 
             this.pnlSleepAmount.Controls.Add(this.lblWaitAmount);
             this.pnlSleepAmount.Controls.Add(this.txtSleepAmount);
+            this.pnlSleepAmount.ForeColor = System.Drawing.SystemColors.Control;
             this.pnlSleepAmount.Location = new System.Drawing.Point(0, 354);
             this.pnlSleepAmount.Margin = new System.Windows.Forms.Padding(0);
             this.pnlSleepAmount.Name = "pnlSleepAmount";
@@ -231,6 +236,7 @@ namespace TGMacro
             // 
             // pnlActionType
             // 
+            this.pnlActionType.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pnlActionType.Controls.Add(this.lblActionType);
             this.pnlActionType.Controls.Add(this.cbActionType);
             this.pnlActionType.Location = new System.Drawing.Point(0, 0);
@@ -242,6 +248,7 @@ namespace TGMacro
             // lblActionType
             // 
             this.lblActionType.AutoSize = true;
+            this.lblActionType.ForeColor = System.Drawing.SystemColors.Control;
             this.lblActionType.Location = new System.Drawing.Point(0, 0);
             this.lblActionType.Name = "lblActionType";
             this.lblActionType.Size = new System.Drawing.Size(71, 15);
@@ -250,6 +257,7 @@ namespace TGMacro
             // 
             // pnlKeyStatus
             // 
+            this.pnlKeyStatus.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pnlKeyStatus.Controls.Add(this.lblKeyStatus);
             this.pnlKeyStatus.Controls.Add(this.cbKeyStatus);
             this.pnlKeyStatus.Location = new System.Drawing.Point(0, 171);
@@ -262,6 +270,7 @@ namespace TGMacro
             // lblKeyStatus
             // 
             this.lblKeyStatus.AutoSize = true;
+            this.lblKeyStatus.ForeColor = System.Drawing.SystemColors.Control;
             this.lblKeyStatus.Location = new System.Drawing.Point(0, 0);
             this.lblKeyStatus.Name = "lblKeyStatus";
             this.lblKeyStatus.Size = new System.Drawing.Size(68, 15);
@@ -289,6 +298,7 @@ namespace TGMacro
             // 
             // pnlText
             // 
+            this.pnlText.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pnlText.Controls.Add(this.txtText);
             this.pnlText.Controls.Add(this.lblText);
             this.pnlText.Location = new System.Drawing.Point(0, 57);
@@ -308,6 +318,7 @@ namespace TGMacro
             // lblText
             // 
             this.lblText.AutoSize = true;
+            this.lblText.ForeColor = System.Drawing.SystemColors.Control;
             this.lblText.Location = new System.Drawing.Point(0, 0);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(36, 15);
@@ -316,6 +327,7 @@ namespace TGMacro
             // 
             // pnlKeys
             // 
+            this.pnlKeys.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pnlKeys.Controls.Add(this.txtKeySetter);
             this.pnlKeys.Controls.Add(this.lblKey);
             this.pnlKeys.Location = new System.Drawing.Point(0, 114);
@@ -336,6 +348,7 @@ namespace TGMacro
             // lblKey
             // 
             this.lblKey.AutoSize = true;
+            this.lblKey.ForeColor = System.Drawing.SystemColors.Control;
             this.lblKey.Location = new System.Drawing.Point(0, 0);
             this.lblKey.Name = "lblKey";
             this.lblKey.Size = new System.Drawing.Size(33, 15);
@@ -344,6 +357,7 @@ namespace TGMacro
             // 
             // pnlMouseMoveMethod
             // 
+            this.pnlMouseMoveMethod.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pnlMouseMoveMethod.Controls.Add(this.lblPositioning);
             this.pnlMouseMoveMethod.Controls.Add(this.cbMouseMoveMethod);
             this.pnlMouseMoveMethod.Location = new System.Drawing.Point(0, 228);
@@ -356,6 +370,7 @@ namespace TGMacro
             // lblPositioning
             // 
             this.lblPositioning.AutoSize = true;
+            this.lblPositioning.ForeColor = System.Drawing.SystemColors.Control;
             this.lblPositioning.Location = new System.Drawing.Point(0, 0);
             this.lblPositioning.Name = "lblPositioning";
             this.lblPositioning.Size = new System.Drawing.Size(74, 15);
@@ -395,6 +410,7 @@ namespace TGMacro
             // 
             this.pnlMain.AutoSize = true;
             this.pnlMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlMain.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlMain.Controls.Add(this.pnlTop);
             this.pnlMain.Controls.Add(this.flowLayoutPanel1);
@@ -407,11 +423,12 @@ namespace TGMacro
             // 
             // pnlTop
             // 
-            this.pnlTop.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlTop.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pnlTop.Controls.Add(this.btnClose);
             this.pnlTop.Controls.Add(this.lblTitle);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.pnlTop.ForeColor = System.Drawing.SystemColors.Control;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlTop.MaximumSize = new System.Drawing.Size(0, 30);
@@ -437,10 +454,11 @@ namespace TGMacro
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lblTitle.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.Control;
             this.lblTitle.Location = new System.Drawing.Point(10, 0);
             this.lblTitle.MaximumSize = new System.Drawing.Size(0, 30);
             this.lblTitle.MinimumSize = new System.Drawing.Size(0, 30);

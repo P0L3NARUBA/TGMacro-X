@@ -2,7 +2,7 @@
 {
     public class ENG : Bases.LanguageBase
     {
-        public override string language_name => "ENG";
+        public override string language_name => "English";
         public override string info_color_box => "You can set the color manually by clicking the colored box.";
         public override string info_getting_color_and_position => "•Alt + X to get current cursor position\r\n•Alt + C to get screen color by cursor";
         public override string btnFile => "File";

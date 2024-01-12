@@ -191,7 +191,7 @@ namespace TGMacro
                     case (int)Enums.ActionTypes.MouseButton:
                         if (SecondaryMouseKey == 0)
                         {
-                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_key_selected, "Err");
+                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_key_selected, "Error");
                             return;
                         }
                         Action = new Actions.MouseKeyAction();
@@ -203,7 +203,7 @@ namespace TGMacro
                     case (int)Enums.ActionTypes.KeyboardKey:
                         if (SecondaryKey == 0)
                         {
-                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_key_selected, "Err");
+                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_key_selected, "Error");
                             return;
                         }
                         Action = new Actions.KeyboardKeyAction();
@@ -217,7 +217,7 @@ namespace TGMacro
                     case (int)Enums.ActionTypes.Text:
                         if (txtText.TextLength < 1)
                         {
-                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_text, "Err");
+                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_text, "Error");
                             return;
                         }
                         Action = new Actions.TextAction();

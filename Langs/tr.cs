@@ -1,8 +1,8 @@
-﻿namespace TGMacro.Langs
+﻿﻿namespace TGMacro.Langs
 {
     public class TUR : Bases.LanguageBase
     {
-        public override string language_name => "TUR";
+        public override string language_name => "Turkish";
         public override string info_color_box => "Rengi soldaki renkli kutuya tıklayarak da değiştirebilirsiniz.";
         public override string info_getting_color_and_position => "•Alt + X İmleç pozisyonu\r\n•Alt + C İmlece göre ekran rengi";
         public override string btnFile => "Dosya";

@@ -101,12 +101,14 @@ namespace TGMacro
             // 
             // grpTrigger
             // 
+            this.grpTrigger.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.grpTrigger.Controls.Add(this.pnl_colors);
             this.grpTrigger.Controls.Add(this.pnl_keys);
             this.grpTrigger.Controls.Add(this.lblTrgMethod);
             this.grpTrigger.Controls.Add(this.cbTriggerMethod);
             this.grpTrigger.Controls.Add(this.lblTrgType);
             this.grpTrigger.Controls.Add(this.cbTriggerType);
+            this.grpTrigger.ForeColor = System.Drawing.SystemColors.Control;
             this.grpTrigger.Location = new System.Drawing.Point(491, 45);
             this.grpTrigger.Name = "grpTrigger";
             this.grpTrigger.Size = new System.Drawing.Size(354, 324);
@@ -134,7 +136,7 @@ namespace TGMacro
             // 
             this.lblGrabInfo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblGrabInfo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblGrabInfo2.ForeColor = System.Drawing.Color.Crimson;
+            this.lblGrabInfo2.ForeColor = System.Drawing.Color.MediumBlue;
             this.lblGrabInfo2.Location = new System.Drawing.Point(16, 127);
             this.lblGrabInfo2.Name = "lblGrabInfo2";
             this.lblGrabInfo2.Size = new System.Drawing.Size(302, 47);
@@ -214,6 +216,7 @@ namespace TGMacro
             // lblColorPos
             // 
             this.lblColorPos.AutoSize = true;
+            this.lblColorPos.ForeColor = System.Drawing.SystemColors.Control;
             this.lblColorPos.Location = new System.Drawing.Point(0, 5);
             this.lblColorPos.Name = "lblColorPos";
             this.lblColorPos.Size = new System.Drawing.Size(88, 15);
@@ -260,6 +263,7 @@ namespace TGMacro
             // lblTrgMethod
             // 
             this.lblTrgMethod.AutoSize = true;
+            this.lblTrgMethod.ForeColor = System.Drawing.SystemColors.Control;
             this.lblTrgMethod.Location = new System.Drawing.Point(17, 82);
             this.lblTrgMethod.Name = "lblTrgMethod";
             this.lblTrgMethod.Size = new System.Drawing.Size(45, 15);
@@ -279,6 +283,7 @@ namespace TGMacro
             // lblTrgType
             // 
             this.lblTrgType.AutoSize = true;
+            this.lblTrgType.ForeColor = System.Drawing.SystemColors.Control;
             this.lblTrgType.Location = new System.Drawing.Point(17, 31);
             this.lblTrgType.Name = "lblTrgType";
             this.lblTrgType.Size = new System.Drawing.Size(109, 15);
@@ -308,6 +313,7 @@ namespace TGMacro
             this.grpActions.Controls.Add(this.btnActionMoveUp);
             this.grpActions.Controls.Add(this.btnAddAction);
             this.grpActions.Controls.Add(this.btnActionMoveDown);
+            this.grpActions.ForeColor = System.Drawing.SystemColors.Control;
             this.grpActions.Location = new System.Drawing.Point(13, 127);
             this.grpActions.MinimumSize = new System.Drawing.Size(323, 0);
             this.grpActions.Name = "grpActions";
@@ -399,7 +405,7 @@ namespace TGMacro
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -493,7 +499,9 @@ namespace TGMacro
             // 
             // grpName
             // 
+            this.grpName.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.grpName.Controls.Add(this.txtMacroName);
+            this.grpName.ForeColor = System.Drawing.SystemColors.Control;
             this.grpName.Location = new System.Drawing.Point(16, 42);
             this.grpName.Name = "grpName";
             this.grpName.Size = new System.Drawing.Size(459, 79);
@@ -503,6 +511,7 @@ namespace TGMacro
             // 
             // pnlMain
             // 
+            this.pnlMain.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlMain.Controls.Add(this.progressBar1);
             this.pnlMain.Controls.Add(this.pnlTop);
@@ -528,7 +537,7 @@ namespace TGMacro
             // 
             // pnlTop
             // 
-            this.pnlTop.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlTop.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pnlTop.Controls.Add(this.btnMin);
             this.pnlTop.Controls.Add(this.btnClose);
             this.pnlTop.Controls.Add(this.lblTitle);
@@ -571,10 +580,11 @@ namespace TGMacro
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lblTitle.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.Control;
             this.lblTitle.Location = new System.Drawing.Point(10, 0);
             this.lblTitle.MaximumSize = new System.Drawing.Size(0, 30);
             this.lblTitle.MinimumSize = new System.Drawing.Size(0, 30);
@@ -587,6 +597,7 @@ namespace TGMacro
             // 
             // grpRecord
             // 
+            this.grpRecord.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.grpRecord.Controls.Add(this.btnRecord);
             this.grpRecord.Controls.Add(this.cbDelays);
             this.grpRecord.Controls.Add(this.cbKeyboardKeys);
@@ -595,6 +606,7 @@ namespace TGMacro
             this.grpRecord.Controls.Add(this.lblRecordThis);
             this.grpRecord.Controls.Add(this.lblMouseCapPos);
             this.grpRecord.Controls.Add(this.cbMousePositioning);
+            this.grpRecord.ForeColor = System.Drawing.SystemColors.Control;
             this.grpRecord.Location = new System.Drawing.Point(491, 375);
             this.grpRecord.Name = "grpRecord";
             this.grpRecord.Size = new System.Drawing.Size(348, 237);
@@ -604,8 +616,9 @@ namespace TGMacro
             // 
             // btnRecord
             // 
-            this.btnRecord.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnRecord.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnRecord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRecord.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnRecord.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnRecord.FlatAppearance.BorderSize = 0;
             this.btnRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -664,6 +677,7 @@ namespace TGMacro
             this.cbMouseMovements.Checked = true;
             this.cbMouseMovements.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbMouseMovements.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbMouseMovements.ForeColor = System.Drawing.SystemColors.Control;
             this.cbMouseMovements.Location = new System.Drawing.Point(20, 111);
             this.cbMouseMovements.Name = "cbMouseMovements";
             this.cbMouseMovements.Size = new System.Drawing.Size(128, 19);
@@ -674,6 +688,7 @@ namespace TGMacro
             // lblRecordThis
             // 
             this.lblRecordThis.AutoSize = true;
+            this.lblRecordThis.ForeColor = System.Drawing.SystemColors.Control;
             this.lblRecordThis.Location = new System.Drawing.Point(16, 88);
             this.lblRecordThis.Name = "lblRecordThis";
             this.lblRecordThis.Size = new System.Drawing.Size(53, 15);
@@ -683,6 +698,7 @@ namespace TGMacro
             // lblMouseCapPos
             // 
             this.lblMouseCapPos.AutoSize = true;
+            this.lblMouseCapPos.ForeColor = System.Drawing.SystemColors.Control;
             this.lblMouseCapPos.Location = new System.Drawing.Point(14, 25);
             this.lblMouseCapPos.Name = "lblMouseCapPos";
             this.lblMouseCapPos.Size = new System.Drawing.Size(123, 15);
@@ -701,10 +717,11 @@ namespace TGMacro
             // 
             // btnTest
             // 
-            this.btnTest.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnTest.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnTest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTest.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTest.ForeColor = System.Drawing.SystemColors.Control;
             this.btnTest.Image = global::TGMacroX.Properties.Resources.start_32;
             this.btnTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTest.Location = new System.Drawing.Point(514, 618);
@@ -717,11 +734,12 @@ namespace TGMacro
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSave.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.ForeColor = System.Drawing.SystemColors.Control;
             this.btnSave.Image = global::TGMacroX.Properties.Resources.save_32;
             this.btnSave.Location = new System.Drawing.Point(708, 618);
             this.btnSave.Name = "btnSave";

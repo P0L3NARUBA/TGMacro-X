@@ -48,10 +48,10 @@ namespace TGMacro
             // add embedded languages to languages dictionary
             var eng = new Langs.ENG();
             var tur = new Langs.TUR();
-            var ger = new Langs.GER();
+            var de = new Langs.DE();
             Statics.AppSession.Languages.Add(new Langs.ENG());
             Statics.AppSession.Languages.Add(new Langs.TUR());
-            Statics.AppSession.Languages.Add(new Langs.GER());
+            Statics.AppSession.Languages.Add(new Langs.DE());
 
             // import third party languages with distinct language names
             ImportLanguages();
@@ -68,7 +68,7 @@ namespace TGMacro
             }
             else
             {
-                cmbLanguage.SelectedIndex = cmbLanguage.FindString("ENG");
+                cmbLanguage.SelectedIndex = cmbLanguage.FindString("English");
                 Statics.AppSession.ActiveLanguage = eng;
             }
 
@@ -299,7 +299,7 @@ namespace TGMacro
         {
             if (Statics.AppSession.Macros.Count < 1)
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.info_nothing_to_save, "Err");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.info_nothing_to_save, "Error");
                 return;
             }
             saveFileDialog1.Title = "Save Project";
@@ -352,7 +352,7 @@ namespace TGMacro
             }
             catch
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_saving_project, "Err");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_saving_project, "Error");
             }
         }
 
@@ -389,7 +389,7 @@ namespace TGMacro
             }
             catch
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_loding_project, "Err");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_loding_project, "Error");
             }
         }
 
@@ -418,7 +418,7 @@ namespace TGMacro
             }
             catch
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_importing_project, "Err");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_importing_project, "Error");
             }
         }
 
@@ -465,6 +465,11 @@ namespace TGMacro
         }
 
         private void btnTopMost_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
         {
 
         }
