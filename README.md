@@ -1,4 +1,4 @@
-# TGMX - TGMacro X
+# TGMX - TGMacro X (DARK EDITION)
 
 This repository includes TGMacro X source code and release, also fork of [TGMacro](https://github.com/trksyln/TGMacro)
 
@@ -10,7 +10,7 @@ This repository includes TGMacro X source code and release, also fork of [TGMacr
 - German Language Support
 - Some improvements for Turkish Language
 - New Icon for Program
-- Dark & White Theme Support
+- Dark Theme Support
 
 #### New Technical Features
 
