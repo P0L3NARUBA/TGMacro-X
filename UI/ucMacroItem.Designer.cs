@@ -44,7 +44,7 @@ namespace TGMacro
             // 
             // picTriggerType
             // 
-            this.picTriggerType.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.picTriggerType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.picTriggerType.BackgroundImage = global::TGMacroX.Properties.Resources.keyboard_16px;
             this.picTriggerType.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picTriggerType.Location = new System.Drawing.Point(24, 40);
@@ -56,7 +56,9 @@ namespace TGMacro
             // lblMacroName
             // 
             this.lblMacroName.AutoEllipsis = true;
+            this.lblMacroName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.lblMacroName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMacroName.ForeColor = System.Drawing.Color.White;
             this.lblMacroName.Location = new System.Drawing.Point(20, 0);
             this.lblMacroName.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.lblMacroName.Name = "lblMacroName";
@@ -64,10 +66,12 @@ namespace TGMacro
             this.lblMacroName.TabIndex = 1;
             this.lblMacroName.Text = "Macro 0001";
             this.lblMacroName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMacroName.Click += new System.EventHandler(this.lblMacroName_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btnDelete.BackgroundImage = global::TGMacroX.Properties.Resources.del_16;
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDelete.FlatAppearance.BorderSize = 0;
@@ -76,11 +80,12 @@ namespace TGMacro
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(20, 20);
             this.btnDelete.TabIndex = 15;
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // btnEdit
             // 
             this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btnEdit.BackgroundImage = global::TGMacroX.Properties.Resources.edit_16;
             this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEdit.FlatAppearance.BorderSize = 0;
@@ -89,11 +94,12 @@ namespace TGMacro
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(20, 20);
             this.btnEdit.TabIndex = 14;
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             // 
             // picRunning
             // 
             this.picRunning.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picRunning.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.picRunning.Image = global::TGMacroX.Properties.Resources.run_16;
             this.picRunning.Location = new System.Drawing.Point(191, 3);
             this.picRunning.Name = "picRunning";
@@ -115,8 +121,9 @@ namespace TGMacro
             // lblKeyInfo
             // 
             this.lblKeyInfo.AutoEllipsis = true;
-            this.lblKeyInfo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblKeyInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.lblKeyInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblKeyInfo.ForeColor = System.Drawing.Color.White;
             this.lblKeyInfo.Location = new System.Drawing.Point(20, 40);
             this.lblKeyInfo.Margin = new System.Windows.Forms.Padding(3);
             this.lblKeyInfo.Name = "lblKeyInfo";
@@ -125,10 +132,11 @@ namespace TGMacro
             this.lblKeyInfo.TabIndex = 18;
             this.lblKeyInfo.Text = "Control + W";
             this.lblKeyInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblKeyInfo.Click += new System.EventHandler(this.lblKeyInfo_Click);
             // 
             // ucMacroItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.picTriggerType);
@@ -138,7 +146,7 @@ namespace TGMacro
             this.Controls.Add(this.lblMacroName);
             this.Controls.Add(this.lblKeyInfo);
             this.Controls.Add(this.pnlEnable);
-            this.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Name = "ucMacroItem";
             this.Size = new System.Drawing.Size(267, 65);
             ((System.ComponentModel.ISupportInitialize)(this.picTriggerType)).EndInit();

@@ -144,6 +144,7 @@ namespace TGMacro
             cbMouseMovements.Text = Statics.AppSession.ActiveLanguage.text_mouse_movements;
             btnRecord.Text = Statics.AppSession.ActiveLanguage.btn_record_off;
 
+
         }
         private void setDataSource()
         {
@@ -178,10 +179,14 @@ namespace TGMacro
             else if (PrimaryKey == CSInputs.Enums.KeyboardKeys.None && SecondaryMouseKey != CSInputs.Enums.MouseKeys.None)
             {
                 txtKeySetter.Text = SecondaryMouseKey.ToString();
+                txtKeySetter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+                txtKeySetter.ForeColor = Color.White;
             }
             else
             {
                 txtKeySetter.Text = Statics.AppSession.ActiveLanguage.text_click_here_to_set_key;
+                txtKeySetter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+                txtKeySetter.ForeColor = Color.White;
             }
 
             txtKeySetter.Enabled = true;
@@ -959,6 +964,16 @@ namespace TGMacro
             }
 
             DialogResult = DialogResult.OK;
+        }
+
+        private void txtMacroName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpActions_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

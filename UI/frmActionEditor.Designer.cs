@@ -80,12 +80,12 @@ namespace TGMacro
             // 
             // cbActionType
             // 
-            this.cbActionType.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.cbActionType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.cbActionType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbActionType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbActionType.ForeColor = System.Drawing.Color.White;
             this.cbActionType.FormattingEnabled = true;
-            this.cbActionType.Location = new System.Drawing.Point(0, 19);
+            this.cbActionType.Location = new System.Drawing.Point(5, 25);
             this.cbActionType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbActionType.Name = "cbActionType";
             this.cbActionType.Size = new System.Drawing.Size(198, 23);
@@ -93,6 +93,8 @@ namespace TGMacro
             // 
             // txtSleepAmount
             // 
+            this.txtSleepAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtSleepAmount.ForeColor = System.Drawing.Color.White;
             this.txtSleepAmount.Location = new System.Drawing.Point(0, 19);
             this.txtSleepAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSleepAmount.Maximum = new decimal(new int[] {
@@ -111,12 +113,12 @@ namespace TGMacro
             // 
             // cbKeyStatus
             // 
-            this.cbKeyStatus.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.cbKeyStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.cbKeyStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbKeyStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbKeyStatus.ForeColor = System.Drawing.Color.White;
             this.cbKeyStatus.FormattingEnabled = true;
-            this.cbKeyStatus.Location = new System.Drawing.Point(0, 19);
+            this.cbKeyStatus.Location = new System.Drawing.Point(5, 25);
             this.cbKeyStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbKeyStatus.Name = "cbKeyStatus";
             this.cbKeyStatus.Size = new System.Drawing.Size(198, 23);
@@ -124,7 +126,7 @@ namespace TGMacro
             // 
             // pnlMousePos
             // 
-            this.pnlMousePos.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pnlMousePos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlMousePos.Controls.Add(this.lblGrabCurInfo);
             this.pnlMousePos.Controls.Add(this.mPosY);
             this.pnlMousePos.Controls.Add(this.lblPosition);
@@ -154,7 +156,7 @@ namespace TGMacro
             // 
             // mPosY
             // 
-            this.mPosY.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.mPosY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.mPosY.ForeColor = System.Drawing.Color.White;
             this.mPosY.Location = new System.Drawing.Point(125, 24);
             this.mPosY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -184,7 +186,7 @@ namespace TGMacro
             // 
             // mPosX
             // 
-            this.mPosX.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.mPosX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.mPosX.ForeColor = System.Drawing.Color.White;
             this.mPosX.Location = new System.Drawing.Point(23, 24);
             this.mPosX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -246,7 +248,7 @@ namespace TGMacro
             // 
             // pnlActionType
             // 
-            this.pnlActionType.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pnlActionType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlActionType.Controls.Add(this.lblActionType);
             this.pnlActionType.Controls.Add(this.cbActionType);
             this.pnlActionType.ForeColor = System.Drawing.Color.White;
@@ -268,7 +270,7 @@ namespace TGMacro
             // 
             // pnlKeyStatus
             // 
-            this.pnlKeyStatus.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pnlKeyStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlKeyStatus.Controls.Add(this.lblKeyStatus);
             this.pnlKeyStatus.Controls.Add(this.cbKeyStatus);
             this.pnlKeyStatus.Location = new System.Drawing.Point(0, 171);
@@ -309,7 +311,7 @@ namespace TGMacro
             // 
             // pnlText
             // 
-            this.pnlText.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pnlText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlText.Controls.Add(this.txtText);
             this.pnlText.Controls.Add(this.lblText);
             this.pnlText.ForeColor = System.Drawing.Color.White;
@@ -322,9 +324,9 @@ namespace TGMacro
             // 
             // txtText
             // 
-            this.txtText.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.txtText.ForeColor = System.Drawing.Color.White;
-            this.txtText.Location = new System.Drawing.Point(6, 20);
+            this.txtText.Location = new System.Drawing.Point(5, 25);
             this.txtText.Name = "txtText";
             this.txtText.Size = new System.Drawing.Size(194, 21);
             this.txtText.TabIndex = 28;
@@ -341,7 +343,7 @@ namespace TGMacro
             // 
             // pnlKeys
             // 
-            this.pnlKeys.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pnlKeys.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlKeys.Controls.Add(this.txtKeySetter);
             this.pnlKeys.Controls.Add(this.lblKey);
             this.pnlKeys.ForeColor = System.Drawing.Color.White;
@@ -354,9 +356,9 @@ namespace TGMacro
             // 
             // txtKeySetter
             // 
-            this.txtKeySetter.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtKeySetter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.txtKeySetter.ForeColor = System.Drawing.Color.White;
-            this.txtKeySetter.Location = new System.Drawing.Point(6, 20);
+            this.txtKeySetter.Location = new System.Drawing.Point(5, 25);
             this.txtKeySetter.Name = "txtKeySetter";
             this.txtKeySetter.ReadOnly = true;
             this.txtKeySetter.Size = new System.Drawing.Size(194, 21);
@@ -374,7 +376,7 @@ namespace TGMacro
             // 
             // pnlMouseMoveMethod
             // 
-            this.pnlMouseMoveMethod.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pnlMouseMoveMethod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlMouseMoveMethod.Controls.Add(this.lblPositioning);
             this.pnlMouseMoveMethod.Controls.Add(this.cbMouseMoveMethod);
             this.pnlMouseMoveMethod.ForeColor = System.Drawing.Color.White;
@@ -397,12 +399,12 @@ namespace TGMacro
             // 
             // cbMouseMoveMethod
             // 
-            this.cbMouseMoveMethod.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.cbMouseMoveMethod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.cbMouseMoveMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMouseMoveMethod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMouseMoveMethod.ForeColor = System.Drawing.Color.White;
             this.cbMouseMoveMethod.FormattingEnabled = true;
-            this.cbMouseMoveMethod.Location = new System.Drawing.Point(0, 19);
+            this.cbMouseMoveMethod.Location = new System.Drawing.Point(5, 25);
             this.cbMouseMoveMethod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbMouseMoveMethod.Name = "cbMouseMoveMethod";
             this.cbMouseMoveMethod.Size = new System.Drawing.Size(198, 23);
@@ -430,7 +432,7 @@ namespace TGMacro
             // 
             this.pnlMain.AutoSize = true;
             this.pnlMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pnlMain.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pnlMain.BackColor = System.Drawing.Color.Black;
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlMain.Controls.Add(this.pnlTop);
             this.pnlMain.Controls.Add(this.flowLayoutPanel1);
@@ -443,7 +445,7 @@ namespace TGMacro
             // 
             // pnlTop
             // 
-            this.pnlTop.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pnlTop.BackColor = System.Drawing.Color.Black;
             this.pnlTop.Controls.Add(this.btnClose);
             this.pnlTop.Controls.Add(this.lblTitle);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -474,7 +476,7 @@ namespace TGMacro
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblTitle.BackColor = System.Drawing.Color.Black;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
@@ -488,6 +490,10 @@ namespace TGMacro
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "Action Editor";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
             // frmActionEditor
             // 

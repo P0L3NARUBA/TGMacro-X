@@ -10,6 +10,7 @@ namespace TGMacro.Actions
         public string VisibleValue => SleepAmount + "ms";
         public Image Icon => TGMacroX.Properties.Resources.wait_16;
 
+
         public object Clone()
         {
             return MemberwiseClone();

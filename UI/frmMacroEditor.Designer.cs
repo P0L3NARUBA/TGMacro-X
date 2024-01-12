@@ -101,7 +101,7 @@ namespace TGMacro
             // 
             // grpTrigger
             // 
-            this.grpTrigger.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.grpTrigger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.grpTrigger.Controls.Add(this.pnl_colors);
             this.grpTrigger.Controls.Add(this.pnl_keys);
             this.grpTrigger.Controls.Add(this.lblTrgMethod);
@@ -145,7 +145,7 @@ namespace TGMacro
             // 
             // mPosY
             // 
-            this.mPosY.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.mPosY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.mPosY.ForeColor = System.Drawing.Color.White;
             this.mPosY.Location = new System.Drawing.Point(194, 31);
             this.mPosY.Maximum = new decimal(new int[] {
@@ -164,7 +164,7 @@ namespace TGMacro
             // 
             // mPosX
             // 
-            this.mPosX.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.mPosX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.mPosX.ForeColor = System.Drawing.Color.White;
             this.mPosX.Location = new System.Drawing.Point(51, 31);
             this.mPosX.Maximum = new decimal(new int[] {
@@ -276,7 +276,7 @@ namespace TGMacro
             // 
             // cbTriggerMethod
             // 
-            this.cbTriggerMethod.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.cbTriggerMethod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.cbTriggerMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTriggerMethod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbTriggerMethod.ForeColor = System.Drawing.Color.White;
@@ -298,7 +298,7 @@ namespace TGMacro
             // 
             // cbTriggerType
             // 
-            this.cbTriggerType.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.cbTriggerType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.cbTriggerType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTriggerType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbTriggerType.ForeColor = System.Drawing.Color.White;
@@ -310,7 +310,7 @@ namespace TGMacro
             // 
             // grpActions
             // 
-            this.grpActions.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.grpActions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.grpActions.Controls.Add(this.btnMultiAction);
             this.grpActions.Controls.Add(this.btnAdjustTiming);
             this.grpActions.Controls.Add(this.btnClear);
@@ -330,6 +330,7 @@ namespace TGMacro
             this.grpActions.TabIndex = 2;
             this.grpActions.TabStop = false;
             this.grpActions.Text = "Actions";
+            this.grpActions.Enter += new System.EventHandler(this.grpActions_Enter);
             // 
             // btnMultiAction
             // 
@@ -397,26 +398,26 @@ namespace TGMacro
             this.dtActions.AllowUserToDeleteRows = false;
             this.dtActions.AllowUserToResizeColumns = false;
             this.dtActions.AllowUserToResizeRows = false;
-            this.dtActions.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dtActions.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.dtActions.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dtActions.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dtActions.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtActions.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtActions.ColumnHeadersHeight = 30;
             this.dtActions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtActions.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtActions.Dock = System.Windows.Forms.DockStyle.Left;
@@ -495,13 +496,14 @@ namespace TGMacro
             // 
             // txtMacroName
             // 
-            this.txtMacroName.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtMacroName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.txtMacroName.ForeColor = System.Drawing.Color.White;
             this.txtMacroName.Location = new System.Drawing.Point(17, 31);
             this.txtMacroName.Name = "txtMacroName";
             this.txtMacroName.Size = new System.Drawing.Size(169, 21);
             this.txtMacroName.TabIndex = 0;
             this.txtMacroName.Text = "Macro 01";
+            this.txtMacroName.TextChanged += new System.EventHandler(this.txtMacroName_TextChanged);
             // 
             // colorDialog1
             // 
@@ -509,7 +511,7 @@ namespace TGMacro
             // 
             // grpName
             // 
-            this.grpName.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.grpName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.grpName.Controls.Add(this.txtMacroName);
             this.grpName.ForeColor = System.Drawing.Color.White;
             this.grpName.Location = new System.Drawing.Point(16, 42);
@@ -521,7 +523,7 @@ namespace TGMacro
             // 
             // pnlMain
             // 
-            this.pnlMain.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pnlMain.BackColor = System.Drawing.Color.Black;
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlMain.Controls.Add(this.progressBar1);
             this.pnlMain.Controls.Add(this.pnlTop);
@@ -547,7 +549,7 @@ namespace TGMacro
             // 
             // pnlTop
             // 
-            this.pnlTop.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pnlTop.BackColor = System.Drawing.Color.Black;
             this.pnlTop.Controls.Add(this.btnMin);
             this.pnlTop.Controls.Add(this.btnClose);
             this.pnlTop.Controls.Add(this.lblTitle);
@@ -590,7 +592,7 @@ namespace TGMacro
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblTitle.BackColor = System.Drawing.Color.Black;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
@@ -607,7 +609,7 @@ namespace TGMacro
             // 
             // grpRecord
             // 
-            this.grpRecord.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.grpRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.grpRecord.Controls.Add(this.btnRecord);
             this.grpRecord.Controls.Add(this.cbDelays);
             this.grpRecord.Controls.Add(this.cbKeyboardKeys);
@@ -626,7 +628,7 @@ namespace TGMacro
             // 
             // btnRecord
             // 
-            this.btnRecord.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.btnRecord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRecord.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnRecord.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
@@ -720,7 +722,7 @@ namespace TGMacro
             // 
             // cbMousePositioning
             // 
-            this.cbMousePositioning.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.cbMousePositioning.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.cbMousePositioning.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMousePositioning.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMousePositioning.ForeColor = System.Drawing.Color.White;
@@ -732,7 +734,7 @@ namespace TGMacro
             // 
             // btnTest
             // 
-            this.btnTest.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.btnTest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTest.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -749,7 +751,7 @@ namespace TGMacro
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnSave.FlatAppearance.BorderSize = 0;

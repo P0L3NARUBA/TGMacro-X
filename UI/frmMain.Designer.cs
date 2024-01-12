@@ -64,7 +64,7 @@ namespace TGMacro
             // 
             // pnlGroup
             // 
-            this.pnlGroup.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pnlGroup.BackColor = System.Drawing.Color.Black;
             this.pnlGroup.Controls.Add(this.btnAdd);
             this.pnlGroup.Controls.Add(this.btnEnable);
             this.pnlGroup.Controls.Add(this.lblNoMacroMessage);
@@ -77,7 +77,7 @@ namespace TGMacro
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -95,7 +95,7 @@ namespace TGMacro
             // 
             // btnEnable
             // 
-            this.btnEnable.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnEnable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.btnEnable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEnable.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnEnable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -116,7 +116,7 @@ namespace TGMacro
             this.lblNoMacroMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNoMacroMessage.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblNoMacroMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
             this.lblNoMacroMessage.ForeColor = System.Drawing.Color.White;
             this.lblNoMacroMessage.Location = new System.Drawing.Point(10, 10);
             this.lblNoMacroMessage.Name = "lblNoMacroMessage";
@@ -124,6 +124,7 @@ namespace TGMacro
             this.lblNoMacroMessage.TabIndex = 13;
             this.lblNoMacroMessage.Text = "No macro to show.\r\n\r\nClick \"Add New\" to create macro.";
             this.lblNoMacroMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNoMacroMessage.Click += new System.EventHandler(this.lblNoMacroMessage_Click);
             // 
             // pnlMacroList
             // 
@@ -141,7 +142,7 @@ namespace TGMacro
             // 
             // cmbLanguage
             // 
-            this.cmbLanguage.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.cmbLanguage.BackColor = System.Drawing.Color.Black;
             this.cmbLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLanguage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbLanguage.ForeColor = System.Drawing.Color.White;
@@ -169,7 +170,7 @@ namespace TGMacro
             // 
             // pnlMain
             // 
-            this.pnlMain.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pnlMain.BackColor = System.Drawing.Color.Black;
             this.pnlMain.Controls.Add(this.btnStatus);
             this.pnlMain.Controls.Add(this.cmbLanguage);
             this.pnlMain.Controls.Add(this.btnTopMost);
@@ -200,6 +201,7 @@ namespace TGMacro
             this.btnStatus.Size = new System.Drawing.Size(20, 24);
             this.btnStatus.TabIndex = 11;
             this.btnStatus.UseVisualStyleBackColor = true;
+            this.btnStatus.Click += new System.EventHandler(this.btnStatus_Click);
             // 
             // btnTopMost
             // 
@@ -243,6 +245,7 @@ namespace TGMacro
             // 
             this.btnHelp.AutoSize = true;
             this.btnHelp.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnHelp.BackColor = System.Drawing.Color.Black;
             this.btnHelp.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnHelp.FlatAppearance.BorderSize = 0;
             this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -253,13 +256,14 @@ namespace TGMacro
             this.btnHelp.Size = new System.Drawing.Size(43, 30);
             this.btnHelp.TabIndex = 8;
             this.btnHelp.Text = "&Help";
-            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.UseVisualStyleBackColor = false;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // btnFile
             // 
             this.btnFile.AutoSize = true;
             this.btnFile.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnFile.BackColor = System.Drawing.Color.Black;
             this.btnFile.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnFile.FlatAppearance.BorderSize = 0;
             this.btnFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -270,12 +274,12 @@ namespace TGMacro
             this.btnFile.Size = new System.Drawing.Size(37, 30);
             this.btnFile.TabIndex = 7;
             this.btnFile.Text = "&File";
-            this.btnFile.UseVisualStyleBackColor = true;
+            this.btnFile.UseVisualStyleBackColor = false;
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblTitle.BackColor = System.Drawing.Color.Black;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
@@ -301,6 +305,8 @@ namespace TGMacro
             // 
             // btnUpdates
             // 
+            this.btnUpdates.BackColor = System.Drawing.Color.Black;
+            this.btnUpdates.ForeColor = System.Drawing.Color.White;
             this.btnUpdates.Image = global::TGMacroX.Properties.Resources.update_16;
             this.btnUpdates.Name = "btnUpdates";
             this.btnUpdates.Size = new System.Drawing.Size(121, 26);
@@ -308,6 +314,8 @@ namespace TGMacro
             // 
             // btnAbout
             // 
+            this.btnAbout.BackColor = System.Drawing.Color.Black;
+            this.btnAbout.ForeColor = System.Drawing.Color.White;
             this.btnAbout.Image = global::TGMacroX.Properties.Resources.about_16;
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(121, 26);
@@ -322,35 +330,47 @@ namespace TGMacro
             this.btnImportProject,
             this.btnImportScript});
             this.ctFileMenu.Name = "ctFileMenu";
-            this.ctFileMenu.Size = new System.Drawing.Size(155, 108);
+            this.ctFileMenu.Size = new System.Drawing.Size(185, 130);
             // 
             // btnLoadProject
             // 
+            this.btnLoadProject.BackColor = System.Drawing.Color.Black;
+            this.btnLoadProject.ForeColor = System.Drawing.Color.White;
             this.btnLoadProject.Image = global::TGMacroX.Properties.Resources.open_16;
             this.btnLoadProject.Name = "btnLoadProject";
-            this.btnLoadProject.Size = new System.Drawing.Size(154, 26);
+            this.btnLoadProject.Size = new System.Drawing.Size(184, 26);
             this.btnLoadProject.Text = "Load Project";
             // 
             // btnSaveProject
             // 
+            this.btnSaveProject.BackColor = System.Drawing.Color.Black;
+            this.btnSaveProject.ForeColor = System.Drawing.Color.White;
             this.btnSaveProject.Image = global::TGMacroX.Properties.Resources.save_16;
             this.btnSaveProject.Name = "btnSaveProject";
-            this.btnSaveProject.Size = new System.Drawing.Size(154, 26);
+            this.btnSaveProject.Size = new System.Drawing.Size(184, 26);
             this.btnSaveProject.Text = "Save Project";
             // 
             // btnImportProject
             // 
+            this.btnImportProject.BackColor = System.Drawing.Color.Black;
+            this.btnImportProject.ForeColor = System.Drawing.Color.White;
             this.btnImportProject.Image = global::TGMacroX.Properties.Resources.import_16;
             this.btnImportProject.Name = "btnImportProject";
-            this.btnImportProject.Size = new System.Drawing.Size(154, 26);
+            this.btnImportProject.Size = new System.Drawing.Size(184, 26);
             this.btnImportProject.Text = "Import Project";
             // 
             // btnImportScript
             // 
+            this.btnImportScript.BackColor = System.Drawing.Color.Black;
+            this.btnImportScript.ForeColor = System.Drawing.Color.White;
             this.btnImportScript.Image = global::TGMacroX.Properties.Resources.import_sc_16;
             this.btnImportScript.Name = "btnImportScript";
-            this.btnImportScript.Size = new System.Drawing.Size(154, 26);
+            this.btnImportScript.Size = new System.Drawing.Size(184, 26);
             this.btnImportScript.Text = "Import Script";
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
             // frmMain
             // 

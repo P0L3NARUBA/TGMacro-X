@@ -32,7 +32,7 @@ namespace TGMacro
             if (Macro.Enable)
             {
                 pnlEnable.BackColor = Color.FromArgb(76, 213, 18);
-                lblMacroName.ForeColor = Color.Black;
+                lblMacroName.ForeColor = Color.White;
             }
             else
             {
@@ -108,5 +108,14 @@ namespace TGMacro
             updateMacroStatus();
         }
 
+        private void lblMacroName_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void lblKeyInfo_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

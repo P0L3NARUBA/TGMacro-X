@@ -3,6 +3,7 @@ using CSInputs.Structs;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Json;
@@ -10,6 +11,7 @@ using System.Web.Script.Serialization;
 using System.Windows.Forms;
 using TGMacro.Bases;
 using TGMacro.ProjectData;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TGMacro
 {
@@ -470,6 +472,33 @@ namespace TGMacro
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLanguage_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            int index = e.Index >= 0 ? e.Index : -1;
+            Brush brush = ((e.State & DrawItemState.Selected) > 0) ? SystemBrushes.HighlightText : new SolidBrush(cmbLanguage.ForeColor);
+            e.DrawBackground();
+            if (index != -1)
+            {
+                e.Graphics.DrawString(cmbLanguage.Items[index].ToString(), e.Font, brush, e.Bounds, StringFormat.GenericDefault);
+            }
+            e.DrawFocusRectangle();
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void lblNoMacroMessage_Click(object sender, EventArgs e)
         {
 
         }
