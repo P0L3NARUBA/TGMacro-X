@@ -36,7 +36,6 @@ namespace TGMacro
             this.btnEnable = new System.Windows.Forms.Button();
             this.lblNoMacroMessage = new System.Windows.Forms.Label();
             this.pnlMacroList = new System.Windows.Forms.FlowLayoutPanel();
-            this.picLanguage = new System.Windows.Forms.PictureBox();
             this.cmbLanguage = new System.Windows.Forms.ComboBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -58,7 +57,6 @@ namespace TGMacro
             this.btnImportScript = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnlGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLanguage)).BeginInit();
             this.pnlMain.SuspendLayout();
             this.ctHelpMenu.SuspendLayout();
             this.ctFileMenu.SuspendLayout();
@@ -83,7 +81,7 @@ namespace TGMacro
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Image = global::TGMacroX.Properties.Resources.add_32;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.Location = new System.Drawing.Point(230, 487);
@@ -101,7 +99,7 @@ namespace TGMacro
             this.btnEnable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEnable.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnEnable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnable.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnEnable.ForeColor = System.Drawing.Color.White;
             this.btnEnable.Image = global::TGMacroX.Properties.Resources.start_32;
             this.btnEnable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEnable.Location = new System.Drawing.Point(10, 487);
@@ -118,8 +116,8 @@ namespace TGMacro
             this.lblNoMacroMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNoMacroMessage.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lblNoMacroMessage.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lblNoMacroMessage.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblNoMacroMessage.ForeColor = System.Drawing.Color.White;
             this.lblNoMacroMessage.Location = new System.Drawing.Point(10, 10);
             this.lblNoMacroMessage.Name = "lblNoMacroMessage";
             this.lblNoMacroMessage.Size = new System.Drawing.Size(444, 471);
@@ -141,30 +139,21 @@ namespace TGMacro
             this.pnlMacroList.TabIndex = 0;
             this.pnlMacroList.WrapContents = false;
             // 
-            // picLanguage
-            // 
-            this.picLanguage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picLanguage.Image = global::TGMacroX.Properties.Resources.language_24;
-            this.picLanguage.Location = new System.Drawing.Point(272, 4);
-            this.picLanguage.Name = "picLanguage";
-            this.picLanguage.Size = new System.Drawing.Size(24, 24);
-            this.picLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLanguage.TabIndex = 19;
-            this.picLanguage.TabStop = false;
-            this.picLanguage.Click += new System.EventHandler(this.picLanguage_Click);
-            // 
             // cmbLanguage
             // 
+            this.cmbLanguage.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.cmbLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLanguage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbLanguage.ForeColor = System.Drawing.Color.White;
             this.cmbLanguage.FormattingEnabled = true;
             this.cmbLanguage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cmbLanguage.Items.AddRange(new object[] {
             "EN",
             "TR",
             "DE"});
-            this.cmbLanguage.Location = new System.Drawing.Point(302, 4);
+            this.cmbLanguage.Location = new System.Drawing.Point(269, 4);
             this.cmbLanguage.Name = "cmbLanguage";
-            this.cmbLanguage.Size = new System.Drawing.Size(76, 23);
+            this.cmbLanguage.Size = new System.Drawing.Size(83, 23);
             this.cmbLanguage.TabIndex = 14;
             this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
             // 
@@ -181,7 +170,6 @@ namespace TGMacro
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pnlMain.Controls.Add(this.picLanguage);
             this.pnlMain.Controls.Add(this.btnStatus);
             this.pnlMain.Controls.Add(this.cmbLanguage);
             this.pnlMain.Controls.Add(this.btnTopMost);
@@ -207,7 +195,7 @@ namespace TGMacro
             this.btnStatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnStatus.FlatAppearance.BorderSize = 0;
             this.btnStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatus.Location = new System.Drawing.Point(246, 4);
+            this.btnStatus.Location = new System.Drawing.Point(358, 5);
             this.btnStatus.Name = "btnStatus";
             this.btnStatus.Size = new System.Drawing.Size(20, 24);
             this.btnStatus.TabIndex = 11;
@@ -258,7 +246,7 @@ namespace TGMacro
             this.btnHelp.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnHelp.FlatAppearance.BorderSize = 0;
             this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnHelp.ForeColor = System.Drawing.Color.White;
             this.btnHelp.Location = new System.Drawing.Point(135, 0);
             this.btnHelp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHelp.Name = "btnHelp";
@@ -275,7 +263,7 @@ namespace TGMacro
             this.btnFile.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnFile.FlatAppearance.BorderSize = 0;
             this.btnFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFile.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnFile.ForeColor = System.Drawing.Color.White;
             this.btnFile.Location = new System.Drawing.Point(98, 0);
             this.btnFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnFile.Name = "btnFile";
@@ -291,7 +279,7 @@ namespace TGMacro
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(10, 0);
             this.lblTitle.MaximumSize = new System.Drawing.Size(0, 30);
             this.lblTitle.MinimumSize = new System.Drawing.Size(0, 30);
@@ -369,7 +357,7 @@ namespace TGMacro
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(464, 573);
+            this.ClientSize = new System.Drawing.Size(464, 569);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlGroup);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -382,7 +370,6 @@ namespace TGMacro
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TGMX";
             this.pnlGroup.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLanguage)).EndInit();
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
             this.ctHelpMenu.ResumeLayout(false);
@@ -418,7 +405,6 @@ namespace TGMacro
         private System.Windows.Forms.ToolTip toolTip1;
         public System.Windows.Forms.Button btnMin;
         private System.Windows.Forms.ComboBox cmbLanguage;
-        private System.Windows.Forms.PictureBox picLanguage;
     }
 }
 

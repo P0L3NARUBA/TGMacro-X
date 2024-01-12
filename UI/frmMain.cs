@@ -39,7 +39,7 @@ namespace TGMacro
             btnUpdates.Text = Statics.AppSession.ActiveLanguage.btnUpdates;
             toolTip1.SetToolTip(btnStatus, Statics.AppSession.ActiveLanguage.text_macro_status);
             toolTip1.SetToolTip(btnTopMost, Statics.AppSession.ActiveLanguage.btnTopMost);
-            toolTip1.SetToolTip(picLanguage, Statics.AppSession.ActiveLanguage.btnChangeLanguage);
+        //    toolTip1.SetToolTip(picLanguage, Statics.AppSession.ActiveLanguage.btnChangeLanguage);
             toolTip1.SetToolTip(cmbLanguage, Statics.AppSession.ActiveLanguage.btnChangeLanguage);
    //         toolTip1.SetToolTip(button1, "Buy me a coffee");
         }

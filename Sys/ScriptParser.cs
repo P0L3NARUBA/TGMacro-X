@@ -22,7 +22,7 @@ namespace TGMacro
                 }
                 else
                 {
-                    MessageBox.Show(Statics.AppSession.ActiveLanguage.error_unkown_script, "Err");
+                    MessageBox.Show(Statics.AppSession.ActiveLanguage.error_unkown_script, "Error");
                 }
             }
         }
@@ -91,7 +91,7 @@ namespace TGMacro
             }
             catch
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_import_script, "Err");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_import_script, "Error");
             }
             return tmpActions.ToArray();
         }

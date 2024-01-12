@@ -8,14 +8,14 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>TGMacroX</RootNamespace>
     <AssemblyName>TGMacroX</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>false</Deterministic>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <PublishUrl>C:\TGMacroX\Publish\</PublishUrl>
+    <PublishUrl>C:\TGMacro\Publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -25,8 +25,6 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <SupportUrl></SupportUrl>
-    <ErrorReportUrl></ErrorReportUrl>
     <TargetCulture>en</TargetCulture>
     <ProductName>TGMacroX</ProductName>
     <PublisherName>wh0lewhale</PublisherName>
@@ -64,9 +62,7 @@
     <CodeAnalysisRuleSet>
     </CodeAnalysisRuleSet>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-  </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\x86\Debug\</OutputPath>
@@ -117,6 +113,9 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CSInputs">
       <HintPath>.\CSInputs.dll</HintPath>
@@ -151,6 +150,7 @@
     <Compile Include="Interfaces\IMacroAction.cs" />
     <Compile Include="Bases\TriggerBase.cs" />
     <Compile Include="Langs\en.cs" />
+    <Compile Include="Langs\de.cs" />
     <Compile Include="Langs\tr.cs" />
     <Compile Include="Sys\MacroItem.cs" />
     <Compile Include="Statics\AppSession.cs" />
@@ -236,6 +236,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -349,7 +350,7 @@
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
