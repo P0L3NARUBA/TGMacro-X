@@ -10,7 +10,7 @@ This repository includes TGMacro X source code and release, also fork of [TGMacr
 - German Language Support
 - Some improvements for Turkish Language
 - New Icon for Program
-- Black Theme
+- Dark Theme Suppor
 
 #### New Technical Features
 
