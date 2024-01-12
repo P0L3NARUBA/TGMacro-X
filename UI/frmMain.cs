@@ -41,7 +41,7 @@ namespace TGMacro
             toolTip1.SetToolTip(btnTopMost, Statics.AppSession.ActiveLanguage.btnTopMost);
       //      toolTip1.SetToolTip(picLanguage, Statics.AppSession.ActiveLanguage.btnChangeLanguage);
             toolTip1.SetToolTip(cmbLanguage, Statics.AppSession.ActiveLanguage.btnChangeLanguage);
-            toolTip1.SetToolTip(button1, "Buy me a coffee");
+      //      toolTip1.SetToolTip(button1, "Buy me a coffee");
         }
         private void FrmMain_Shown(object sender, EventArgs e)
         {
