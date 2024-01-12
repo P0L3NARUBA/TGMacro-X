@@ -45,8 +45,6 @@ namespace TGMacro
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.numericUpDown1.ForeColor = System.Drawing.Color.White;
             this.numericUpDown1.Location = new System.Drawing.Point(124, 93);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             10000,
@@ -59,7 +57,7 @@ namespace TGMacro
             0,
             -2147483648});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 21);
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown1.TabIndex = 0;
             this.numericUpDown1.Value = new decimal(new int[] {
             5,
@@ -69,8 +67,6 @@ namespace TGMacro
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(275, 46);
@@ -81,21 +77,18 @@ namespace TGMacro
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(13, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 15);
+            this.label2.Size = new System.Drawing.Size(86, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Milliseconds :";
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btnSave.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.ForeColor = System.Drawing.SystemColors.Control;
             this.btnSave.Image = global::TGMacroX.Properties.Resources.save_32;
             this.btnSave.Location = new System.Drawing.Point(105, 129);
             this.btnSave.Name = "btnSave";
@@ -108,7 +101,6 @@ namespace TGMacro
             // 
             // pnlMain
             // 
-            this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlMain.Controls.Add(this.pnlTop);
             this.pnlMain.Controls.Add(this.label1);
@@ -123,11 +115,11 @@ namespace TGMacro
             // 
             // pnlTop
             // 
-            this.pnlTop.BackColor = System.Drawing.Color.Black;
+            this.pnlTop.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pnlTop.Controls.Add(this.btnClose);
             this.pnlTop.Controls.Add(this.lblTitle);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.pnlTop.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnlTop.MaximumSize = new System.Drawing.Size(0, 30);
@@ -153,17 +145,16 @@ namespace TGMacro
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.Black;
+            this.lblTitle.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.lblTitle.Location = new System.Drawing.Point(10, 0);
             this.lblTitle.MaximumSize = new System.Drawing.Size(0, 30);
             this.lblTitle.MinimumSize = new System.Drawing.Size(0, 30);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-            this.lblTitle.Size = new System.Drawing.Size(101, 30);
+            this.lblTitle.Size = new System.Drawing.Size(93, 30);
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "Wait Adjuster";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -171,11 +162,11 @@ namespace TGMacro
             // frmTimeAdjuster
             // 
             this.AcceptButton = this.btnSave;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 182);
             this.Controls.Add(this.pnlMain);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

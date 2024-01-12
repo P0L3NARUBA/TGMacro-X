@@ -14,7 +14,7 @@ namespace TGMacro
         private void FrmAbout_Shown(object sender, System.EventArgs ee)
         {
             TopMost = Statics.AppSession.TopMost;
-        //    button1.Click += (s, e) => Process.Start("https://www.buymeacoffee.com/trksyln");
+    //        button1.Click += (s, e) => Process.Start("https://www.buymeacoffee.com/trksyln");
             label1.Text = label1.Text.Replace("{0}", Statics.AppSession.Version);
             btnClose.Click += (s, e) => Close();
             lblTitle.MouseDown += (s, e) =>
@@ -33,11 +33,6 @@ namespace TGMacro
                     Sys.WindowHandling.SendMessage(Handle, Sys.WindowHandling.WM_NCLBUTTONDOWN, Sys.WindowHandling.HT_CAPTION, 0);
                 }
             };
-        }
-
-        private void label1_Click(object sender, System.EventArgs e)
-        {
-
         }
 
         private void label3_Click(object sender, System.EventArgs e)

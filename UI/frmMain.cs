@@ -3,7 +3,6 @@ using CSInputs.Structs;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Json;
@@ -11,7 +10,6 @@ using System.Web.Script.Serialization;
 using System.Windows.Forms;
 using TGMacro.Bases;
 using TGMacro.ProjectData;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TGMacro
 {
@@ -41,9 +39,9 @@ namespace TGMacro
             btnUpdates.Text = Statics.AppSession.ActiveLanguage.btnUpdates;
             toolTip1.SetToolTip(btnStatus, Statics.AppSession.ActiveLanguage.text_macro_status);
             toolTip1.SetToolTip(btnTopMost, Statics.AppSession.ActiveLanguage.btnTopMost);
-        //    toolTip1.SetToolTip(picLanguage, Statics.AppSession.ActiveLanguage.btnChangeLanguage);
+      //      toolTip1.SetToolTip(picLanguage, Statics.AppSession.ActiveLanguage.btnChangeLanguage);
             toolTip1.SetToolTip(cmbLanguage, Statics.AppSession.ActiveLanguage.btnChangeLanguage);
-   //         toolTip1.SetToolTip(button1, "Buy me a coffee");
+            toolTip1.SetToolTip(button1, "Buy me a coffee");
         }
         private void FrmMain_Shown(object sender, EventArgs e)
         {
@@ -70,7 +68,7 @@ namespace TGMacro
             }
             else
             {
-                cmbLanguage.SelectedIndex = cmbLanguage.FindString("English");
+                cmbLanguage.SelectedIndex = cmbLanguage.FindString("ENG");
                 Statics.AppSession.ActiveLanguage = eng;
             }
 
@@ -160,7 +158,7 @@ namespace TGMacro
         {
             Statics.AppSession.LanguageChanged += (s, e) => LoadLanguage();
 
-       //     button1.Click += (s, e) => Process.Start("https://www.buymeacoffee.com/trksyln");
+      //      button1.Click += (s, e) => Process.Start("https://www.buymeacoffee.com/trksyln");
 
             btnFile.Click += (s, e) =>
             {
@@ -180,7 +178,7 @@ namespace TGMacro
             {
                 try
                 {
-                    System.Diagnostics.Process.Start("https://github.com/WH0LEWHALE/TGMacro-X/releases/tag/release");
+                    System.Diagnostics.Process.Start("https://sourceforge.net/projects/tmacro/");
                 }
                 catch { }
             };
@@ -301,7 +299,7 @@ namespace TGMacro
         {
             if (Statics.AppSession.Macros.Count < 1)
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.info_nothing_to_save, "Error");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.info_nothing_to_save, "Err");
                 return;
             }
             saveFileDialog1.Title = "Save Project";
@@ -354,7 +352,7 @@ namespace TGMacro
             }
             catch
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_saving_project, "Error");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_saving_project, "Err");
             }
         }
 
@@ -391,7 +389,7 @@ namespace TGMacro
             }
             catch
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_loding_project, "Error");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_loding_project, "Err");
             }
         }
 
@@ -420,7 +418,7 @@ namespace TGMacro
             }
             catch
             {
-                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_importing_project, "Error");
+                MessageBox.Show(Statics.AppSession.ActiveLanguage.error_importing_project, "Err");
             }
         }
 
@@ -456,53 +454,5 @@ namespace TGMacro
                 item.Width = pnlMacroList.VerticalScroll.Visible ? pnlMacroList.Width - 30 : pnlMacroList.Width - 6;
             }
         }
-
-        private void picLanguage_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void btnTopMost_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnHelp_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnStatus_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cmbLanguage_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            int index = e.Index >= 0 ? e.Index : -1;
-            Brush brush = ((e.State & DrawItemState.Selected) > 0) ? SystemBrushes.HighlightText : new SolidBrush(cmbLanguage.ForeColor);
-            e.DrawBackground();
-            if (index != -1)
-            {
-                e.Graphics.DrawString(cmbLanguage.Items[index].ToString(), e.Font, brush, e.Bounds, StringFormat.GenericDefault);
-            }
-            e.DrawFocusRectangle();
-        }
-
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void lblNoMacroMessage_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-    }
-    
-
+}

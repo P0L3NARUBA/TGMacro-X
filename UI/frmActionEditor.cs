@@ -60,8 +60,6 @@ namespace TGMacro
             toolTip1.SetToolTip(cbMouseMoveMethod, Statics.AppSession.ActiveLanguage.text_mouse_move_method_info);
 
             btnSave.Text = Statics.AppSession.ActiveLanguage.btnSave;
-            btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            btnSave.ForeColor = System.Drawing.Color.White;
         }
 
         private void viewKeys()
@@ -74,20 +72,14 @@ namespace TGMacro
             if (SecondaryKey != CSInputs.Enums.KeyboardKeys.None)
             {
                 txtKeySetter.Text = SecondaryKey.ToString();
-                txtKeySetter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-                txtKeySetter.ForeColor = System.Drawing.Color.White;
             }
             else if (SecondaryMouseKey != CSInputs.Enums.MouseKeys.None)
             {
                 txtKeySetter.Text = SecondaryMouseKey.ToString();
-                txtKeySetter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-                txtKeySetter.ForeColor = System.Drawing.Color.White;
             }
             else
             {
                 txtKeySetter.Text = Statics.AppSession.ActiveLanguage.text_click_here_to_set_key;
-                txtKeySetter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-                txtKeySetter.ForeColor = System.Drawing.Color.White;
             }
 
             txtKeySetter.Enabled = true;
@@ -199,7 +191,7 @@ namespace TGMacro
                     case (int)Enums.ActionTypes.MouseButton:
                         if (SecondaryMouseKey == 0)
                         {
-                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_key_selected, "Error");
+                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_key_selected, "Err");
                             return;
                         }
                         Action = new Actions.MouseKeyAction();
@@ -211,7 +203,7 @@ namespace TGMacro
                     case (int)Enums.ActionTypes.KeyboardKey:
                         if (SecondaryKey == 0)
                         {
-                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_key_selected, "Error");
+                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_key_selected, "Err");
                             return;
                         }
                         Action = new Actions.KeyboardKeyAction();
@@ -225,7 +217,7 @@ namespace TGMacro
                     case (int)Enums.ActionTypes.Text:
                         if (txtText.TextLength < 1)
                         {
-                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_text, "Error");
+                            MessageBox.Show(Statics.AppSession.ActiveLanguage.info_no_text, "Err");
                             return;
                         }
                         Action = new Actions.TextAction();
@@ -346,9 +338,5 @@ namespace TGMacro
             pnlText.Visible = true;
         }
 
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
     }
 }

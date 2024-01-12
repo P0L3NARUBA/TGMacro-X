@@ -335,8 +335,6 @@
   <ItemGroup>
     <Content Include="ico.ico" />
     <None Include="Resources\language_24.png" />
-    <None Include="Resources\buymecoffeCup.png" />
-    <None Include="Resources\buymecoffee.png" />
     <None Include="Resources\min_16.png" />
     <None Include="Resources\multi_16.png" />
     <None Include="Resources\update_16.png" />
