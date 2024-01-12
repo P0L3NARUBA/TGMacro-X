@@ -4,6 +4,7 @@ This repository includes TGMacro X source code and release, also fork of [TGMacr
 
 * You can download our prebuilt macro program [from releases](https://github.com/WH0LEWHALE/TGMacro-X/releases)
 * For more advanced stuff like compiling tutorial or anything, Go over to [our wiki](https://github.com/WH0LEWHALE/TGMacro-X/wiki)
+* You can check out [our project](https://github.com/users/WH0LEWHALE/projects/5) page and get informed about or done or future plans.
 
 ### New Features 
 - German Language Support
