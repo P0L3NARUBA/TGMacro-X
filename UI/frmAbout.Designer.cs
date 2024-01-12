@@ -84,7 +84,6 @@ namespace TGMacro
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(424, 236);
             this.pnlMain.TabIndex = 16;
-
             // 
             // label3
             // 
@@ -158,7 +157,7 @@ namespace TGMacro
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(14)))), ((int)(((byte)(14)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pictureBox1.Image = global::TGMacroX.Properties.Resources.png;
             this.pictureBox1.Location = new System.Drawing.Point(22, 62);
             this.pictureBox1.Name = "pictureBox1";
