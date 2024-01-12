@@ -160,7 +160,8 @@ namespace TGMacro
             this.cmbLanguage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cmbLanguage.Items.AddRange(new object[] {
             "EN",
-            "TR"});
+            "TR",
+            "DE"});
             this.cmbLanguage.Location = new System.Drawing.Point(302, 4);
             this.cmbLanguage.Name = "cmbLanguage";
             this.cmbLanguage.Size = new System.Drawing.Size(76, 23);
