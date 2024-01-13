@@ -39,6 +39,7 @@ namespace TGMacro
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.cmbLanguage = new FlatComboExample.NetFX.FlatComboBox();
             this.btnStatus = new System.Windows.Forms.Button();
             this.btnTopMost = new System.Windows.Forms.Button();
             this.btnMin = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@ namespace TGMacro
             this.btnImportProject = new System.Windows.Forms.ToolStripMenuItem();
             this.btnImportScript = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.cmbLanguage = new FlatComboExample.NetFX.FlatComboBox();
             this.pnlGroup.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.ctHelpMenu.SuspendLayout();
@@ -132,7 +132,7 @@ namespace TGMacro
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlMacroList.AutoScroll = true;
-            this.pnlMacroList.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlMacroList.BackColor = System.Drawing.Color.FromArgb(20,20,20);
             this.pnlMacroList.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.pnlMacroList.Location = new System.Drawing.Point(10, 10);
             this.pnlMacroList.Name = "pnlMacroList";
@@ -171,6 +171,19 @@ namespace TGMacro
             this.pnlMain.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.pnlMain.Size = new System.Drawing.Size(464, 30);
             this.pnlMain.TabIndex = 6;
+            // 
+            // cmbLanguage
+            // 
+            this.cmbLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.cmbLanguage.BorderColor = System.Drawing.Color.Black;
+            this.cmbLanguage.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.cmbLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLanguage.ForeColor = System.Drawing.Color.White;
+            this.cmbLanguage.FormattingEnabled = true;
+            this.cmbLanguage.Location = new System.Drawing.Point(231, 5);
+            this.cmbLanguage.Name = "cmbLanguage";
+            this.cmbLanguage.Size = new System.Drawing.Size(121, 23);
+            this.cmbLanguage.TabIndex = 15;
             // 
             // btnStatus
             // 
@@ -353,18 +366,6 @@ namespace TGMacro
             // toolTip1
             // 
             this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
-            // 
-            // cmbLanguage
-            // 
-            this.cmbLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.cmbLanguage.BorderColor = System.Drawing.Color.Black;
-            this.cmbLanguage.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.cmbLanguage.ForeColor = System.Drawing.Color.White;
-            this.cmbLanguage.FormattingEnabled = true;
-            this.cmbLanguage.Location = new System.Drawing.Point(231, 5);
-            this.cmbLanguage.Name = "cmbLanguage";
-            this.cmbLanguage.Size = new System.Drawing.Size(121, 23);
-            this.cmbLanguage.TabIndex = 15;
             // 
             // frmMain
             // 

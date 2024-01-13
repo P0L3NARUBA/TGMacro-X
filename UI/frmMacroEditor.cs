@@ -136,6 +136,7 @@ namespace TGMacro
             lblMouseCapPos.Text = Statics.AppSession.ActiveLanguage.text_capture_mouse_pos;
 
             txtKeySetter.Text = Statics.AppSession.ActiveLanguage.text_click_here_to_set_key;
+            txtKeySetter.BorderStyle = BorderStyle.FixedSingle;
 
             lblRecordThis.Text = Statics.AppSession.ActiveLanguage.text_record;
             cbDelays.Text = Statics.AppSession.ActiveLanguage.text_keys;
@@ -156,6 +157,7 @@ namespace TGMacro
 
             dtActions.DataSource = actionTable;
             dtActions.ScrollBars = ScrollBars.Vertical;
+
         }
         private void ViewKeysOnKeySetterTextBox()
         {
