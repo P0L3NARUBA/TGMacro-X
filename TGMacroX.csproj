@@ -170,6 +170,12 @@
     <Compile Include="UI\DatagridDoubleBuffer.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UI\FlatComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\FlatNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UI\frmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UI\FlatComboExample.NetFX.csproj" />
+    <None Include="UI\FlatNumericUpDownExample.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\about_16.png" />
@@ -335,8 +343,6 @@
   <ItemGroup>
     <Content Include="ico.ico" />
     <None Include="Resources\language_24.png" />
-    <None Include="Resources\buymecoffeCup.png" />
-    <None Include="Resources\buymecoffee.png" />
     <None Include="Resources\min_16.png" />
     <None Include="Resources\multi_16.png" />
     <None Include="Resources\update_16.png" />
