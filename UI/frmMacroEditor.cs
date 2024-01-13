@@ -977,5 +977,10 @@ namespace TGMacro
         {
 
         }
+
+        private void cbMouseMovements_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -525,12 +525,12 @@ namespace TGMacro
             // 
             // btnRecord
             // 
-            this.btnRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btnRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.btnRecord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRecord.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnRecord.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(91)))), ((int)(((byte)(91)))));
             this.btnRecord.FlatAppearance.BorderSize = 0;
-            this.btnRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecord.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRecord.Image = global::TGMacroX.Properties.Resources.record_16;
             this.btnRecord.Location = new System.Drawing.Point(217, 150);
             this.btnRecord.Name = "btnRecord";
@@ -546,11 +546,10 @@ namespace TGMacro
             this.cbDelays.AutoSize = true;
             this.cbDelays.Checked = true;
             this.cbDelays.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbDelays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbDelays.ForeColor = System.Drawing.Color.White;
-            this.cbDelays.Location = new System.Drawing.Point(20, 197);
+            this.cbDelays.Location = new System.Drawing.Point(22, 185);
             this.cbDelays.Name = "cbDelays";
-            this.cbDelays.Size = new System.Drawing.Size(60, 19);
+            this.cbDelays.Size = new System.Drawing.Size(63, 19);
             this.cbDelays.TabIndex = 12;
             this.cbDelays.Text = "Delays";
             this.cbDelays.UseVisualStyleBackColor = true;
@@ -560,11 +559,10 @@ namespace TGMacro
             this.cbKeyboardKeys.AutoSize = true;
             this.cbKeyboardKeys.Checked = true;
             this.cbKeyboardKeys.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbKeyboardKeys.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbKeyboardKeys.ForeColor = System.Drawing.Color.White;
-            this.cbKeyboardKeys.Location = new System.Drawing.Point(20, 167);
+            this.cbKeyboardKeys.Location = new System.Drawing.Point(22, 160);
             this.cbKeyboardKeys.Name = "cbKeyboardKeys";
-            this.cbKeyboardKeys.Size = new System.Drawing.Size(104, 19);
+            this.cbKeyboardKeys.Size = new System.Drawing.Size(107, 19);
             this.cbKeyboardKeys.TabIndex = 11;
             this.cbKeyboardKeys.Text = "Keyboard Keys";
             this.cbKeyboardKeys.UseVisualStyleBackColor = true;
@@ -574,11 +572,10 @@ namespace TGMacro
             this.cbMouseButtons.AutoSize = true;
             this.cbMouseButtons.Checked = true;
             this.cbMouseButtons.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbMouseButtons.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMouseButtons.ForeColor = System.Drawing.Color.White;
-            this.cbMouseButtons.Location = new System.Drawing.Point(21, 138);
+            this.cbMouseButtons.Location = new System.Drawing.Point(22, 135);
             this.cbMouseButtons.Name = "cbMouseButtons";
-            this.cbMouseButtons.Size = new System.Drawing.Size(105, 19);
+            this.cbMouseButtons.Size = new System.Drawing.Size(108, 19);
             this.cbMouseButtons.TabIndex = 10;
             this.cbMouseButtons.Text = "Mouse Buttons";
             this.cbMouseButtons.UseVisualStyleBackColor = true;
@@ -588,14 +585,14 @@ namespace TGMacro
             this.cbMouseMovements.AutoSize = true;
             this.cbMouseMovements.Checked = true;
             this.cbMouseMovements.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbMouseMovements.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMouseMovements.ForeColor = System.Drawing.Color.White;
-            this.cbMouseMovements.Location = new System.Drawing.Point(20, 111);
+            this.cbMouseMovements.Location = new System.Drawing.Point(22, 110);
             this.cbMouseMovements.Name = "cbMouseMovements";
-            this.cbMouseMovements.Size = new System.Drawing.Size(128, 19);
+            this.cbMouseMovements.Size = new System.Drawing.Size(131, 19);
             this.cbMouseMovements.TabIndex = 9;
             this.cbMouseMovements.Text = "Mouse Movements";
             this.cbMouseMovements.UseVisualStyleBackColor = true;
+            this.cbMouseMovements.CheckedChanged += new System.EventHandler(this.cbMouseMovements_CheckedChanged);
             // 
             // lblRecordThis
             // 

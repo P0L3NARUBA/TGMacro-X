@@ -132,7 +132,7 @@ namespace TGMacro
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlMacroList.AutoScroll = true;
-            this.pnlMacroList.BackColor = System.Drawing.Color.FromArgb(20,20,20);
+            this.pnlMacroList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlMacroList.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.pnlMacroList.Location = new System.Drawing.Point(10, 10);
             this.pnlMacroList.Name = "pnlMacroList";

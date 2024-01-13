@@ -34,13 +34,13 @@ namespace TGMacro
             this.label2 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.numericUpDown1 = new FlatNumericUpDown();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new FlatNumericUpDown();
             this.pnlMain.SuspendLayout();
-            this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.pnlTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -97,6 +97,33 @@ namespace TGMacro
             this.pnlMain.Size = new System.Drawing.Size(299, 182);
             this.pnlMain.TabIndex = 13;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.numericUpDown1.BorderColor = System.Drawing.Color.Black;
+            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDown1.ButtonHighlightColor = System.Drawing.Color.White;
+            this.numericUpDown1.ForeColor = System.Drawing.Color.White;
+            this.numericUpDown1.Location = new System.Drawing.Point(101, 93);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            -1981284353,
+            -1966660860,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            -1981284353,
+            -1966660860,
+            0,
+            -2147483648});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 21);
+            this.numericUpDown1.TabIndex = 0;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            -2147483648});
+            // 
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.Black;
@@ -144,28 +171,6 @@ namespace TGMacro
             this.lblTitle.Text = "Wait Adjuster";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.numericUpDown1.BorderColor = System.Drawing.Color.Black;
-            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown1.ButtonHighlightColor = System.Drawing.Color.White;
-            this.numericUpDown1.ForeColor = System.Drawing.Color.White;
-            this.numericUpDown1.Location = new System.Drawing.Point(101, 93);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            -1981284353,
-            -1966660860,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            -1981284353,
-            -1966660860,
-            0,
-            -2147483648});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 21);
-            this.numericUpDown1.TabIndex = 0;
-            // 
             // frmTimeAdjuster
             // 
             this.AcceptButton = this.btnSave;
@@ -182,9 +187,9 @@ namespace TGMacro
             this.Text = "Wait Adjuster";
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
