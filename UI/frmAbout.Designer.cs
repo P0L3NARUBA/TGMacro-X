@@ -34,7 +34,6 @@ namespace TGMacro
             this.label2 = new System.Windows.Forms.Label();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -74,7 +73,6 @@ namespace TGMacro
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlMain.Controls.Add(this.label3);
-            this.pnlMain.Controls.Add(this.button1);
             this.pnlMain.Controls.Add(this.pnlTop);
             this.pnlMain.Controls.Add(this.pictureBox1);
             this.pnlMain.Controls.Add(this.label1);
@@ -96,17 +94,6 @@ namespace TGMacro
             this.label3.TabIndex = 18;
             this.label3.Text = "Tarık Saylan @trksyln";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(164, 141);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 53);
-            this.button1.TabIndex = 17;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // pnlTop
             // 
@@ -196,7 +183,6 @@ namespace TGMacro
         public System.Windows.Forms.Panel pnlTop;
         public System.Windows.Forms.Button btnClose;
         public System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
     }
 }
