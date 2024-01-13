@@ -36,7 +36,6 @@ namespace TGMacro
             this.btnEnable = new System.Windows.Forms.Button();
             this.lblNoMacroMessage = new System.Windows.Forms.Label();
             this.pnlMacroList = new System.Windows.Forms.FlowLayoutPanel();
-            this.cmbLanguage = new System.Windows.Forms.ComboBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pnlMain = new System.Windows.Forms.Panel();
@@ -56,6 +55,7 @@ namespace TGMacro
             this.btnImportProject = new System.Windows.Forms.ToolStripMenuItem();
             this.btnImportScript = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.cmbLanguage = new FlatComboExample.NetFX.FlatComboBox();
             this.pnlGroup.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.ctHelpMenu.SuspendLayout();
@@ -140,24 +140,6 @@ namespace TGMacro
             this.pnlMacroList.TabIndex = 0;
             this.pnlMacroList.WrapContents = false;
             // 
-            // cmbLanguage
-            // 
-            this.cmbLanguage.BackColor = System.Drawing.Color.Black;
-            this.cmbLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLanguage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbLanguage.ForeColor = System.Drawing.Color.White;
-            this.cmbLanguage.FormattingEnabled = true;
-            this.cmbLanguage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmbLanguage.Items.AddRange(new object[] {
-            "EN",
-            "TR",
-            "DE"});
-            this.cmbLanguage.Location = new System.Drawing.Point(269, 4);
-            this.cmbLanguage.Name = "cmbLanguage";
-            this.cmbLanguage.Size = new System.Drawing.Size(83, 23);
-            this.cmbLanguage.TabIndex = 14;
-            this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
-            // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.Filter = "TGMacro Project |*.tmacroproj";
@@ -171,8 +153,8 @@ namespace TGMacro
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.Black;
-            this.pnlMain.Controls.Add(this.btnStatus);
             this.pnlMain.Controls.Add(this.cmbLanguage);
+            this.pnlMain.Controls.Add(this.btnStatus);
             this.pnlMain.Controls.Add(this.btnTopMost);
             this.pnlMain.Controls.Add(this.btnMin);
             this.pnlMain.Controls.Add(this.btnClose);
@@ -330,7 +312,7 @@ namespace TGMacro
             this.btnImportProject,
             this.btnImportScript});
             this.ctFileMenu.Name = "ctFileMenu";
-            this.ctFileMenu.Size = new System.Drawing.Size(185, 130);
+            this.ctFileMenu.Size = new System.Drawing.Size(155, 108);
             // 
             // btnLoadProject
             // 
@@ -338,7 +320,7 @@ namespace TGMacro
             this.btnLoadProject.ForeColor = System.Drawing.Color.White;
             this.btnLoadProject.Image = global::TGMacroX.Properties.Resources.open_16;
             this.btnLoadProject.Name = "btnLoadProject";
-            this.btnLoadProject.Size = new System.Drawing.Size(184, 26);
+            this.btnLoadProject.Size = new System.Drawing.Size(154, 26);
             this.btnLoadProject.Text = "Load Project";
             // 
             // btnSaveProject
@@ -347,7 +329,7 @@ namespace TGMacro
             this.btnSaveProject.ForeColor = System.Drawing.Color.White;
             this.btnSaveProject.Image = global::TGMacroX.Properties.Resources.save_16;
             this.btnSaveProject.Name = "btnSaveProject";
-            this.btnSaveProject.Size = new System.Drawing.Size(184, 26);
+            this.btnSaveProject.Size = new System.Drawing.Size(154, 26);
             this.btnSaveProject.Text = "Save Project";
             // 
             // btnImportProject
@@ -356,7 +338,7 @@ namespace TGMacro
             this.btnImportProject.ForeColor = System.Drawing.Color.White;
             this.btnImportProject.Image = global::TGMacroX.Properties.Resources.import_16;
             this.btnImportProject.Name = "btnImportProject";
-            this.btnImportProject.Size = new System.Drawing.Size(184, 26);
+            this.btnImportProject.Size = new System.Drawing.Size(154, 26);
             this.btnImportProject.Text = "Import Project";
             // 
             // btnImportScript
@@ -365,12 +347,24 @@ namespace TGMacro
             this.btnImportScript.ForeColor = System.Drawing.Color.White;
             this.btnImportScript.Image = global::TGMacroX.Properties.Resources.import_sc_16;
             this.btnImportScript.Name = "btnImportScript";
-            this.btnImportScript.Size = new System.Drawing.Size(184, 26);
+            this.btnImportScript.Size = new System.Drawing.Size(154, 26);
             this.btnImportScript.Text = "Import Script";
             // 
             // toolTip1
             // 
             this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
+            // 
+            // cmbLanguage
+            // 
+            this.cmbLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.cmbLanguage.BorderColor = System.Drawing.Color.Black;
+            this.cmbLanguage.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.cmbLanguage.ForeColor = System.Drawing.Color.White;
+            this.cmbLanguage.FormattingEnabled = true;
+            this.cmbLanguage.Location = new System.Drawing.Point(231, 5);
+            this.cmbLanguage.Name = "cmbLanguage";
+            this.cmbLanguage.Size = new System.Drawing.Size(121, 23);
+            this.cmbLanguage.TabIndex = 15;
             // 
             // frmMain
             // 
@@ -424,7 +418,7 @@ namespace TGMacro
         public System.Windows.Forms.ToolStripMenuItem btnImportScript;
         private System.Windows.Forms.ToolTip toolTip1;
         public System.Windows.Forms.Button btnMin;
-        private System.Windows.Forms.ComboBox cmbLanguage;
+        private FlatComboExample.NetFX.FlatComboBox cmbLanguage;
     }
 }
 

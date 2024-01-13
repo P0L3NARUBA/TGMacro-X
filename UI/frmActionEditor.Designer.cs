@@ -31,14 +31,10 @@ namespace TGMacro
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmActionEditor));
-            this.cbActionType = new System.Windows.Forms.ComboBox();
             this.txtSleepAmount = new System.Windows.Forms.NumericUpDown();
-            this.cbKeyStatus = new System.Windows.Forms.ComboBox();
             this.pnlMousePos = new System.Windows.Forms.Panel();
             this.lblGrabCurInfo = new System.Windows.Forms.Label();
-            this.mPosY = new System.Windows.Forms.NumericUpDown();
             this.lblPosition = new System.Windows.Forms.Label();
-            this.mPosX = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pnlSleepAmount = new System.Windows.Forms.Panel();
@@ -56,17 +52,19 @@ namespace TGMacro
             this.lblKey = new System.Windows.Forms.Label();
             this.pnlMouseMoveMethod = new System.Windows.Forms.Panel();
             this.lblPositioning = new System.Windows.Forms.Label();
-            this.cbMouseMoveMethod = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.cbActionType = new FlatComboExample.NetFX.FlatComboBox();
+            this.cbKeyStatus = new FlatComboExample.NetFX.FlatComboBox();
+            this.cbMouseMoveMethod = new FlatComboExample.NetFX.FlatComboBox();
+            this.mPosX = new FlatNumericUpDown();
+            this.mPosY = new FlatNumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.txtSleepAmount)).BeginInit();
             this.pnlMousePos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mPosY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mPosX)).BeginInit();
             this.pnlSleepAmount.SuspendLayout();
             this.pnlActionType.SuspendLayout();
             this.pnlKeyStatus.SuspendLayout();
@@ -76,20 +74,9 @@ namespace TGMacro
             this.pnlMouseMoveMethod.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.pnlTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mPosX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mPosY)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cbActionType
-            // 
-            this.cbActionType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.cbActionType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbActionType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbActionType.ForeColor = System.Drawing.Color.White;
-            this.cbActionType.FormattingEnabled = true;
-            this.cbActionType.Location = new System.Drawing.Point(5, 25);
-            this.cbActionType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbActionType.Name = "cbActionType";
-            this.cbActionType.Size = new System.Drawing.Size(198, 23);
-            this.cbActionType.TabIndex = 4;
             // 
             // txtSleepAmount
             // 
@@ -111,26 +98,13 @@ namespace TGMacro
             0,
             0});
             // 
-            // cbKeyStatus
-            // 
-            this.cbKeyStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.cbKeyStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbKeyStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbKeyStatus.ForeColor = System.Drawing.Color.White;
-            this.cbKeyStatus.FormattingEnabled = true;
-            this.cbKeyStatus.Location = new System.Drawing.Point(5, 25);
-            this.cbKeyStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbKeyStatus.Name = "cbKeyStatus";
-            this.cbKeyStatus.Size = new System.Drawing.Size(198, 23);
-            this.cbKeyStatus.TabIndex = 24;
-            // 
             // pnlMousePos
             // 
             this.pnlMousePos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.pnlMousePos.Controls.Add(this.lblGrabCurInfo);
             this.pnlMousePos.Controls.Add(this.mPosY);
-            this.pnlMousePos.Controls.Add(this.lblPosition);
             this.pnlMousePos.Controls.Add(this.mPosX);
+            this.pnlMousePos.Controls.Add(this.lblGrabCurInfo);
+            this.pnlMousePos.Controls.Add(this.lblPosition);
             this.pnlMousePos.Controls.Add(this.label1);
             this.pnlMousePos.Controls.Add(this.label3);
             this.pnlMousePos.ForeColor = System.Drawing.Color.White;
@@ -154,26 +128,6 @@ namespace TGMacro
             this.lblGrabCurInfo.Text = "(Alt+X get current cursor position)";
             this.lblGrabCurInfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // mPosY
-            // 
-            this.mPosY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.mPosY.ForeColor = System.Drawing.Color.White;
-            this.mPosY.Location = new System.Drawing.Point(125, 24);
-            this.mPosY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.mPosY.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.mPosY.Minimum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            -2147483648});
-            this.mPosY.Name = "mPosY";
-            this.mPosY.Size = new System.Drawing.Size(75, 21);
-            this.mPosY.TabIndex = 31;
-            // 
             // lblPosition
             // 
             this.lblPosition.AutoSize = true;
@@ -183,26 +137,6 @@ namespace TGMacro
             this.lblPosition.Size = new System.Drawing.Size(57, 15);
             this.lblPosition.TabIndex = 27;
             this.lblPosition.Text = "Position :";
-            // 
-            // mPosX
-            // 
-            this.mPosX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.mPosX.ForeColor = System.Drawing.Color.White;
-            this.mPosX.Location = new System.Drawing.Point(23, 24);
-            this.mPosX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.mPosX.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.mPosX.Minimum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            -2147483648});
-            this.mPosX.Name = "mPosX";
-            this.mPosX.Size = new System.Drawing.Size(75, 21);
-            this.mPosX.TabIndex = 30;
             // 
             // label1
             // 
@@ -249,8 +183,8 @@ namespace TGMacro
             // pnlActionType
             // 
             this.pnlActionType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.pnlActionType.Controls.Add(this.lblActionType);
             this.pnlActionType.Controls.Add(this.cbActionType);
+            this.pnlActionType.Controls.Add(this.lblActionType);
             this.pnlActionType.ForeColor = System.Drawing.Color.White;
             this.pnlActionType.Location = new System.Drawing.Point(0, 0);
             this.pnlActionType.Margin = new System.Windows.Forms.Padding(0);
@@ -271,8 +205,8 @@ namespace TGMacro
             // pnlKeyStatus
             // 
             this.pnlKeyStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.pnlKeyStatus.Controls.Add(this.lblKeyStatus);
             this.pnlKeyStatus.Controls.Add(this.cbKeyStatus);
+            this.pnlKeyStatus.Controls.Add(this.lblKeyStatus);
             this.pnlKeyStatus.Location = new System.Drawing.Point(0, 171);
             this.pnlKeyStatus.Margin = new System.Windows.Forms.Padding(0);
             this.pnlKeyStatus.Name = "pnlKeyStatus";
@@ -325,6 +259,7 @@ namespace TGMacro
             // txtText
             // 
             this.txtText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtText.ForeColor = System.Drawing.Color.White;
             this.txtText.Location = new System.Drawing.Point(5, 25);
             this.txtText.Name = "txtText";
@@ -357,6 +292,7 @@ namespace TGMacro
             // txtKeySetter
             // 
             this.txtKeySetter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txtKeySetter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKeySetter.ForeColor = System.Drawing.Color.White;
             this.txtKeySetter.Location = new System.Drawing.Point(5, 25);
             this.txtKeySetter.Name = "txtKeySetter";
@@ -377,8 +313,8 @@ namespace TGMacro
             // pnlMouseMoveMethod
             // 
             this.pnlMouseMoveMethod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.pnlMouseMoveMethod.Controls.Add(this.lblPositioning);
             this.pnlMouseMoveMethod.Controls.Add(this.cbMouseMoveMethod);
+            this.pnlMouseMoveMethod.Controls.Add(this.lblPositioning);
             this.pnlMouseMoveMethod.ForeColor = System.Drawing.Color.White;
             this.pnlMouseMoveMethod.Location = new System.Drawing.Point(0, 228);
             this.pnlMouseMoveMethod.Margin = new System.Windows.Forms.Padding(0);
@@ -396,19 +332,6 @@ namespace TGMacro
             this.lblPositioning.Size = new System.Drawing.Size(74, 15);
             this.lblPositioning.TabIndex = 27;
             this.lblPositioning.Text = "Positioning :";
-            // 
-            // cbMouseMoveMethod
-            // 
-            this.cbMouseMoveMethod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.cbMouseMoveMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMouseMoveMethod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbMouseMoveMethod.ForeColor = System.Drawing.Color.White;
-            this.cbMouseMoveMethod.FormattingEnabled = true;
-            this.cbMouseMoveMethod.Location = new System.Drawing.Point(5, 25);
-            this.cbMouseMoveMethod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbMouseMoveMethod.Name = "cbMouseMoveMethod";
-            this.cbMouseMoveMethod.Size = new System.Drawing.Size(198, 23);
-            this.cbMouseMoveMethod.TabIndex = 24;
             // 
             // btnSave
             // 
@@ -495,6 +418,62 @@ namespace TGMacro
             // 
             this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
+            // cbActionType
+            // 
+            this.cbActionType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.cbActionType.BorderColor = System.Drawing.Color.Black;
+            this.cbActionType.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.cbActionType.ForeColor = System.Drawing.Color.White;
+            this.cbActionType.FormattingEnabled = true;
+            this.cbActionType.Location = new System.Drawing.Point(5, 25);
+            this.cbActionType.Name = "cbActionType";
+            this.cbActionType.Size = new System.Drawing.Size(198, 23);
+            this.cbActionType.TabIndex = 28;
+            // 
+            // cbKeyStatus
+            // 
+            this.cbKeyStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.cbKeyStatus.BorderColor = System.Drawing.Color.Black;
+            this.cbKeyStatus.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.cbKeyStatus.ForeColor = System.Drawing.Color.White;
+            this.cbKeyStatus.FormattingEnabled = true;
+            this.cbKeyStatus.Location = new System.Drawing.Point(5, 25);
+            this.cbKeyStatus.Name = "cbKeyStatus";
+            this.cbKeyStatus.Size = new System.Drawing.Size(198, 23);
+            this.cbKeyStatus.TabIndex = 29;
+            // 
+            // cbMouseMoveMethod
+            // 
+            this.cbMouseMoveMethod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.cbMouseMoveMethod.BorderColor = System.Drawing.Color.Black;
+            this.cbMouseMoveMethod.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.cbMouseMoveMethod.ForeColor = System.Drawing.Color.White;
+            this.cbMouseMoveMethod.FormattingEnabled = true;
+            this.cbMouseMoveMethod.Location = new System.Drawing.Point(5, 25);
+            this.cbMouseMoveMethod.Name = "cbMouseMoveMethod";
+            this.cbMouseMoveMethod.Size = new System.Drawing.Size(198, 23);
+            this.cbMouseMoveMethod.TabIndex = 30;
+            // 
+            // mPosX
+            // 
+            this.mPosX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.mPosX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mPosX.ForeColor = System.Drawing.Color.White;
+            this.mPosX.Location = new System.Drawing.Point(25, 24);
+            this.mPosX.Name = "mPosX";
+            this.mPosX.Size = new System.Drawing.Size(75, 21);
+            this.mPosX.TabIndex = 33;
+            // 
+            // mPosY
+            // 
+            this.mPosY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.mPosY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mPosY.ForeColor = System.Drawing.Color.White;
+            this.mPosY.Location = new System.Drawing.Point(125, 24);
+            this.mPosY.Name = "mPosY";
+            this.mPosY.Size = new System.Drawing.Size(75, 21);
+            this.mPosY.TabIndex = 34;
+            // 
             // frmActionEditor
             // 
             this.AcceptButton = this.btnSave;
@@ -515,8 +494,6 @@ namespace TGMacro
             ((System.ComponentModel.ISupportInitialize)(this.txtSleepAmount)).EndInit();
             this.pnlMousePos.ResumeLayout(false);
             this.pnlMousePos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mPosY)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mPosX)).EndInit();
             this.pnlSleepAmount.ResumeLayout(false);
             this.pnlSleepAmount.PerformLayout();
             this.pnlActionType.ResumeLayout(false);
@@ -534,19 +511,17 @@ namespace TGMacro
             this.pnlMain.PerformLayout();
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mPosX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mPosY)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox cbActionType;
         private System.Windows.Forms.NumericUpDown txtSleepAmount;
-        private System.Windows.Forms.ComboBox cbKeyStatus;
         private System.Windows.Forms.Panel pnlMousePos;
-        private System.Windows.Forms.NumericUpDown mPosY;
         private System.Windows.Forms.Label lblPosition;
-        private System.Windows.Forms.NumericUpDown mPosX;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel pnlSleepAmount;
@@ -559,7 +534,6 @@ namespace TGMacro
         private System.Windows.Forms.Label lblGrabCurInfo;
         private System.Windows.Forms.Panel pnlMouseMoveMethod;
         private System.Windows.Forms.Label lblPositioning;
-        private System.Windows.Forms.ComboBox cbMouseMoveMethod;
         private System.Windows.Forms.Panel pnlKeys;
         private System.Windows.Forms.Label lblKey;
         private System.Windows.Forms.Button btnSave;
@@ -572,5 +546,10 @@ namespace TGMacro
         private System.Windows.Forms.Panel pnlText;
         private System.Windows.Forms.TextBox txtText;
         private System.Windows.Forms.Label lblText;
+        private FlatComboExample.NetFX.FlatComboBox cbActionType;
+        private FlatNumericUpDown mPosX;
+        private FlatComboExample.NetFX.FlatComboBox cbKeyStatus;
+        private FlatComboExample.NetFX.FlatComboBox cbMouseMoveMethod;
+        private FlatNumericUpDown mPosY;
     }
 }
