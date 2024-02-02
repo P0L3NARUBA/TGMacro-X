@@ -19,14 +19,13 @@ This repository includes TGMacro X source code and release, also fork of [TGMacr
 * Upgraded to Visual Studio 2022!
 * Upgraded to .NET 4.8!
 * Added .sln files.
-* It compiles very easier than original TGMacro.
 * It contains CSInputs library inside of the repository so you don't need to download from other places.
 
 # QNA (Questions And Answers)
 
  **Why should you choose TGMacroX instead of TGMacro?** 
           
-Because the TGMacro is has some problems, and TGMacro X is revamp of TGMacro but better, faster and more cleaned version.
+Because the TGMacro is has some problems, and TGMacro X is revamp of TGMacro but better and more cleaned version.
 
  **I dont want to mess with the source code, where can i download the program?**
 
