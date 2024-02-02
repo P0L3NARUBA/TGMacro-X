@@ -9,7 +9,7 @@
 
   ;Name and file
   Name "TGMacro X"
-  OutFile "TGMacroXSetup.exe"
+  OutFile "Setup_TGMacroX.exe"
   Unicode True
 
   ;Default installation folder
