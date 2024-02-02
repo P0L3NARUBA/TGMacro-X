@@ -15,6 +15,7 @@ This repository includes TGMacro X source code and release, also fork of [TGMacr
 
 #### New Technical Features
 
+* A new setup with Source code!
 * Upgraded to Visual Studio 2022!
 * Upgraded to .NET 4.8!
 * Added .sln files.
