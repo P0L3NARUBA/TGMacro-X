@@ -21,10 +21,6 @@ This repository includes TGMacro X source code and release, also fork of [TGMacr
 * Added .sln files.
 * It contains CSInputs library inside of the repository so you don't need to download from other places.
 
-#### Upcoming Features
-
-* Upgrade to .NET 6.0
-
 # QNA (Questions And Answers)
 
  **Why should you choose TGMacroX instead of TGMacro?** 
