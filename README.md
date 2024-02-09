@@ -34,7 +34,6 @@ You can look out [Our Releases](https://github.com/WH0LEWHALE/TGMacro-X/releases
 # Known Issues and Errors
 
 **Unable to load .resx Because it is not trusted**
-------
 
 Apply these steps to fix it:
 
@@ -52,39 +51,3 @@ You need to apply same procedures at the top.
 
 **Reason:**
 * Its because when you download a zip folder from internet the windows will block some files that has blacklisted extensions, so you need manually unblock the files by doing the steps at the top.
-
-# For Developers
-
-## How To Build
-* This tutorial maybe can be bit of complex, so make sure you reading the tutorial more focused
-* In the end of the day, you will able to compile the whole project and make it more good
-* In the normal TGMacro repository, there are not a full tutorial that covers everything but in this repository you can learn how to compile and how to set your workspace.
-
-### Requirements
-- Source Code of TGMacroX
-- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
-- .NET desktop development
-
-### Running in Visual Studio 2022
-
-- You need install Visual Studio 2022
-- Install Visual Studio 2022 and Download .NET desktop development from Workloads. (If you have Visual Studio 2022 then just press Modify and add .Net desktop development)
-- DONE, Now check out the bottom for compiling tutorial.
-
-
-#### Compiling TGMacro-X
-
-- Just open TGMacroX.sln
-- Switch Debug to Release before compiling.
-- At the top Press Build -> Build Solution
-- Go to bin -> Release and you can find the compiled program.
-  
-#### Compiling CSInputs
-- Just open CSInputs.sln **(In the "CSInputs" Folder)**
-- Switch Debug to Release before compiling.
-- At the top Press Build -> Build Solution
-- Go into CSInputs -> bin -> Release and find the CSInputs.dll
-- Copy and paste that new file that you compiled to main folder that contains **"TGMacroX.sln"**
-
-> [!NOTE]
->  There is already prebuilded version of CSInputs already in the source code but if you interested you can build yourself as instructed on the top.
