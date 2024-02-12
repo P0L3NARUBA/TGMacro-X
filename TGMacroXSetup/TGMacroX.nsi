@@ -2,7 +2,7 @@
 ;Include Modern UI
 
   !include "MUI2.nsh"
-  !define MUI_ICON "C:\Program Files (x86)\NSIS\Examples\TGMacro\ico.ico"
+  !define MUI_ICON "C:\TGMacroXSetup\ico.ico"
 
 ;--------------------------------
 ;General
@@ -50,9 +50,10 @@
 Section # "Base"
 
   SetOutPath "$InstDir"
-  File /r "C:\Program Files (x86)\NSIS\Examples\TGMacro\Dark\*.*"
-  File /r "C:\Program Files (x86)\NSIS\Examples\TGMacro\White\*.*"
-  File /r "C:\Program Files (x86)\NSIS\Examples\TGMacro\ico.ico"
+  File /r "C:\TGMacroXSetup\TGMacroXSetup\Dark\*.*"
+  File /r "C:\TGMacroXSetup\TGMacroXSetup\ico.ico"
+  SetOutPath "$InstDir\White"
+  File /r "C:\TGMacroXSetup\White\*.*"
 
  ;Store installation folder
 WriteRegStr HKCU "Software\TGMacro X" "" $INSTDIR
