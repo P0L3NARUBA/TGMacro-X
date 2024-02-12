@@ -178,7 +178,7 @@ namespace TGMacro
             {
                 try
                 {
-                    System.Diagnostics.Process.Start("https://sourceforge.net/projects/tmacro/");
+                    System.Diagnostics.Process.Start("https://github.com/WH0LEWHALE/TGMacro-X/releases");
                 }
                 catch { }
             };
