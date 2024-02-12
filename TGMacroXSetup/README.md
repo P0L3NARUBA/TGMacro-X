@@ -2,7 +2,6 @@
 
 #### Requirements
 - [NSIS (Nullsoft scriptable install system)](https://nsis.sourceforge.io/Download)
-- ["TGMacroXSetup" Folder](https://github.com/WH0LEWHALE/TGMacro-X/tree/dark-theme/TGMacroXSetup)
 - A Compiled CSInputs.dll and TGMacroX Executables (Dark And White)
 
 ### Compiling TGMacro-X Setup
