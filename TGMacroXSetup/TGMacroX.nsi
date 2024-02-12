@@ -50,8 +50,8 @@
 Section # "Base"
 
   SetOutPath "$InstDir"
-  File /r "C:\TGMacroXSetup\TGMacroXSetup\Dark\*.*"
-  File /r "C:\TGMacroXSetup\TGMacroXSetup\ico.ico"
+  File /r "C:\TGMacroXSetup\Dark\*.*"
+  File /r "C:\TGMacroXSetup\ico.ico"
   SetOutPath "$InstDir\White"
   File /r "C:\TGMacroXSetup\White\*.*"
 
