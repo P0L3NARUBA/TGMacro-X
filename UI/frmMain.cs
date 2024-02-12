@@ -180,7 +180,7 @@ namespace TGMacro
             {
                 try
                 {
-                    System.Diagnostics.Process.Start("https://github.com/WH0LEWHALE/TGMacro-X/releases/tag/release");
+                    System.Diagnostics.Process.Start("https://github.com/WH0LEWHALE/TGMacro-X/releases");
                 }
                 catch { }
             };
