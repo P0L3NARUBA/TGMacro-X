@@ -1,4 +1,5 @@
 # TGMX - TGMacro X
+Best & Free Open Source Macro Program Ever,
 Fixed & Cleaned version of TGMacro.
 
 This repository includes TGMacro X source code and release, also fork of [TGMacro](https://github.com/trksyln/TGMacro)
