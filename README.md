@@ -29,7 +29,7 @@ Because the TGMacro is has some problems, and TGMacro X is revamp of TGMacro but
 
  **I dont want to mess with the source code, where can i download the program?**
 
-You can look out [Our Releases](https://github.com/WH0LEWHALE/TGMacro-X/releases) for latest or older versions of TGMacro X Program!
+You can check out [Our Releases](https://github.com/WH0LEWHALE/TGMacro-X/releases) for latest or older versions of TGMacro X Program!
 
 # Known Issues and Errors
 
