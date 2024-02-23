@@ -21,7 +21,7 @@
 
         public override string btnAbout => "Um";
 
-        public override string info_no_macro => "Keine Makros zum Anzeigen.\r\n Klicken Sie auf Neues Makro hinzufügen und erstellen Sie es.";
+        public override string info_no_macro => "Keine Makros zum Anzeigen,\r\n Klicken Sie auf Neues Makro hinzufügen und erstellen Sie es.";
 
         public override string btnEnable_off => "Aktivieren  {HOME}";
 
