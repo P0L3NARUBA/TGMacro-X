@@ -116,9 +116,9 @@
         public override string info_grab_cursor_position => "(Für Mausposition Alt+X)";
         public override string error_saving_project => "Beim Speichern des Projekts ist ein Fehler aufgetreten.";
 
-        public override string error_loding_project => "Beim Laden des Projekts ist ein Fehler aufgetreten.\r\nDie Datei ist möglicherweise beschädigt oder stammt von einer anderen Version.";
+        public override string error_loding_project => "Beim Laden des Projekts ist ein Fehler aufgetreten,\r\nDie Datei ist möglicherweise beschädigt oder stammt von einer anderen Version.";
 
-        public override string error_importing_project => "Beim Importieren des Projekts ist ein Fehler aufgetreten.\r\nDie Datei ist möglicherweise beschädigt oder stammt von einer anderen Version.";
+        public override string error_importing_project => "Beim Importieren des Projekts ist ein Fehler aufgetreten,\r\nDie Datei ist möglicherweise beschädigt oder stammt von einer anderen Version.";
 
         public override string error_import_script => "Beim Importieren des AMC Skript ist ein Fehler aufgetreten.\r\n";
 
@@ -141,7 +141,7 @@
         public override string btnClearActions => "Löschen Sie alle Aktionen";
 
         public override string text_capture_mouse_pos => "Ermitteln Sie die folgende Position des Zeigers :";
-        public override string text_mouse_move_method_info => "Absoluter Wert bestimmt die neue Position des Zeigers.\r\nDer relative Wert addiert oder subtrahiert die Position des Zeigers.";
+        public override string text_mouse_move_method_info => "Absoluter Wert bestimmt die neue Position des Zeigers,\r\nDer relative Wert addiert oder subtrahiert die Position des Zeigers.";
 
         public override string text_grab_cursor_position => "(Zeigerpose. für Alt + X)";
         public override string btnUpdates => "Aktualisierung";
