@@ -21,7 +21,7 @@
 
         public override string btnAbout => "Um";
 
-        public override string info_no_macro => "Keine Makros zum Anzeigen.\r\n Klicken Sie auf Neues Makro hinzufügen und erstellen Sie es.";
+        public override string info_no_macro => "Keine Makros zum Anzeigen,\r\n Klicken Sie auf Neues Makro hinzufügen und erstellen Sie es.";
 
         public override string btnEnable_off => "Aktivieren  {HOME}";
 
@@ -116,9 +116,9 @@
         public override string info_grab_cursor_position => "(Für Mausposition Alt+X)";
         public override string error_saving_project => "Beim Speichern des Projekts ist ein Fehler aufgetreten.";
 
-        public override string error_loding_project => "Beim Laden des Projekts ist ein Fehler aufgetreten.\r\nDie Datei ist möglicherweise beschädigt oder stammt von einer anderen Version.";
+        public override string error_loding_project => "Beim Laden des Projekts ist ein Fehler aufgetreten,\r\nDie Datei ist möglicherweise beschädigt oder stammt von einer anderen Version.";
 
-        public override string error_importing_project => "Beim Importieren des Projekts ist ein Fehler aufgetreten.\r\nDie Datei ist möglicherweise beschädigt oder stammt von einer anderen Version.";
+        public override string error_importing_project => "Beim Importieren des Projekts ist ein Fehler aufgetreten,\r\nDie Datei ist möglicherweise beschädigt oder stammt von einer anderen Version.";
 
         public override string error_import_script => "Beim Importieren des AMC Skript ist ein Fehler aufgetreten.\r\n";
 
@@ -141,7 +141,7 @@
         public override string btnClearActions => "Löschen Sie alle Aktionen";
 
         public override string text_capture_mouse_pos => "Ermitteln Sie die folgende Position des Zeigers :";
-        public override string text_mouse_move_method_info => "Absoluter Wert bestimmt die neue Position des Zeigers.\r\nDer relative Wert addiert oder subtrahiert die Position des Zeigers.";
+        public override string text_mouse_move_method_info => "Absoluter Wert bestimmt die neue Position des Zeigers,\r\nDer relative Wert addiert oder subtrahiert die Position des Zeigers.";
 
         public override string text_grab_cursor_position => "(Zeigerpose. für Alt + X)";
         public override string btnUpdates => "Aktualisierung";
@@ -170,8 +170,8 @@
         public override string text_adjust_time_info => "Addiert oder subtrahiert den Wert zu allen Wartevorgängen.";
         public override string text_adjust_timing => "Wartezeiten festlegen";
         public override string btnMultiAdd => "Aktion am Ende aller ausgewählten Aktionen hinzufügen.";
-        public override string info_keyboard_key_missing => "Einige Tastaturtastenaktionen fehlen, wenn sie gedrückt oder losgelassen werden. Überprüfen Sie die Aktionsliste.";
-        public override string info_mouse_key_missing => "Bei einigen Maustastenaktionen fehlen die Aktionen zum Drücken oder Loslassen. Überprüfen Sie die Aktionsliste.";
+        public override string info_keyboard_key_missing => "Einige Tastaturtastenaktionen fehlen, wenn sie gedrückt oder losgelassen werden, Überprüfen Sie die Aktionsliste.";
+        public override string info_mouse_key_missing => "Bei einigen Maustastenaktionen fehlen die Aktionen zum Drücken oder Loslassen, Überprüfen Sie die Aktionsliste.";
         public override string info_actions_has_trigger_key => "Aktionen können keine festgelegten Schlüssel zur Überprüfung senden.";
 
         public override string btn_macro_delete => "{macroname} wird gelöscht?";
