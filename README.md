@@ -54,3 +54,7 @@ You need to apply same procedures at the top.
 
 **Reason:**
 * Its because when you download a zip folder from internet the windows will block some files that has blacklisted extensions, so you need manually unblock the files by doing the steps at the top.
+
+# Screenshots
+![1](https://github.com/P0L3NARUBA/TGMacro-X/assets/146978592/f7e94f93-4470-4195-a614-8bb176923db4)
+![2](https://github.com/P0L3NARUBA/TGMacro-X/assets/146978592/cf62be8a-e838-4571-9ae4-f702e0bd809c)
