@@ -2,7 +2,7 @@
 {
     public class DE : Bases.LanguageBase
     {
-        public override string language_name => "Germany";
+        public override string language_name => "German";
         public override string info_color_box => "Sie können die Farbe auch ändern, indem Sie auf das farbige Feld links klicken.\r\n";
         public override string info_getting_color_and_position => "•Alt + X Cursor Position\r\n\r\n•Alt + C Bildschirmfarbe relativ zum Cursor";
         public override string btnFile => "Datei";
