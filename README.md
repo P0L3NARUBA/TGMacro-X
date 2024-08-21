@@ -5,7 +5,7 @@ Fixed & Cleaned version of TGMacro.
 This repository includes TGMacro X source code and release, also fork of [TGMacro](https://github.com/trksyln/TGMacro)
 
 * You can download our prebuilt macro program binaries [from releases](https://github.com/P0L3NARUBA/TGMacro-X/releases)
-* For more advanced stuff like compiling tutorial or anything, Head over to [our wiki](https://github.com/P0L3NARUBA/TGMacro-X/wiki)
+* For more advanced stuff like compiling tutorial or et cetera, Head over to [our wiki](https://github.com/P0L3NARUBA/TGMacro-X/wiki)
 
 
 ### New Features 
