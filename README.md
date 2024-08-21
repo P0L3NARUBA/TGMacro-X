@@ -12,6 +12,7 @@ This repository includes TGMacro X source code and release, also fork of [TGMacr
 * New Language(s)
    * Some improvements for Turkish Language
 * New Icon for Program
+* The program is now on Dark Mode rather than Light Mode
 
 #### New Technical Features
 
