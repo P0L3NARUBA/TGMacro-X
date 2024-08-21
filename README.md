@@ -27,7 +27,7 @@ Also, feel free to create pull request and issues.
 
 # QNA (Questions And Answers)
 
- **Why should you choose TGMacroX instead of TGMacro?** 
+ **Why you should choose TGMacro X instead of TGMacro?** 
           
 Because the TGMacro is has some problems, and TGMacro X is revamp of TGMacro but better and more cleaned version.
 
