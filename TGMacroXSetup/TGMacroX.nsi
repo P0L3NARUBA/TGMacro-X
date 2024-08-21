@@ -52,8 +52,6 @@ Section # "Base"
   SetOutPath "$InstDir"
   File /r "C:\Users\gianni\Desktop\Dosyalar\TGMacroXSetup\Dark\*.*"
   File /r "C:\Users\gianni\Desktop\Dosyalar\TGMacroXSetup\ico.ico"
-  SetOutPath "$InstDir\White"
-  File /r "C:\Users\gianni\Desktop\Dosyalar\TGMacroXSetup\White\*.*"
 
  ;Store installation folder
 WriteRegStr HKCU "Software\TGMacro X" "" $INSTDIR
@@ -81,9 +79,6 @@ SectionEnd
 Section "Desktop Shortcut" SectionX
     SetShellVarContext current
     CreateShortCut "$DESKTOP\TGMacroX Dark.lnk" "$INSTDIR\TGMacroX.exe"
-
-SetShellVarContext current
-    CreateShortCut "$DESKTOP\TGMacroX White.lnk" "$INSTDIR\White\TGMacroX.exe"
 
 SectionEnd
 
